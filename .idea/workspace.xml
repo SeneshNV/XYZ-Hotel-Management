@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="" />
+    <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/application/admin-main/admin-main.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/login.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/signup.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Add_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Assistant.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Assistant_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Feedback.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Feedback_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Help.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Help_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Home_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/P_msg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/P_msg_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Partners_List.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Partners_List_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Report.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Report_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/See_how_works.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/See_how_works_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Status.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/Status_W.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/View boards-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/View boards.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/check2-square 1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/icon.qrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/logout-svgrepo-com(1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/logout-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/setting_dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/setting_light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/un_check2-square 2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +48,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2fE6FiB9TpNQitzaoPbgLAK8W7i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -27,13 +65,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/xampp/htdocs/XYZ Hotel Management"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>

@@ -1,0 +1,34 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Add.svg</file>
+    <file>logout-svgrepo-com.svg</file>
+    <file>Add_W.svg</file>
+    <file>Assistant.svg</file>
+    <file>Assistant_W.svg</file>
+    <file>check2-square 1.svg</file>
+    <file>Feedback.svg</file>
+    <file>Feedback_W.svg</file>
+    <file>Help.svg</file>
+    <file>Help_W.svg</file>
+    <file>Home.svg</file>
+    <file>Home_W.svg</file>
+    <file>P_msg.svg</file>
+    <file>P_msg_W.svg</file>
+    <file>Partners_List.svg</file>
+    <file>Partners_List_W.svg</file>
+    <file>Report.svg</file>
+    <file>Report_W.svg</file>
+    <file>Search.svg</file>
+    <file>See_how_works.svg</file>
+    <file>See_how_works_W.svg</file>
+    <file>setting_dark.svg</file>
+    <file>setting_light.svg</file>
+    <file>Status.svg</file>
+    <file>Status_W.svg</file>
+    <file>un_check2-square 2.svg</file>
+    <file>View boards.svg</file>
+    <file>View boards-1.svg</file>
+    <file>x-circle 2.svg</file>
+    <file>x-circle.svg</file>
+  </qresource>
+</RCC>
