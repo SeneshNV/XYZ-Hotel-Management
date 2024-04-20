@@ -624,7 +624,7 @@ QPushButton:checked {
                 <item>
                  <widget class="QStackedWidget" name="admin_screens">
                   <property name="currentIndex">
-                   <number>0</number>
+                   <number>1</number>
                   </property>
                   <widget class="QWidget" name="mgt_package">
                    <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -756,8 +756,8 @@ color: rgb(174, 84, 79);</string>
                             <rect>
                              <x>0</x>
                              <y>0</y>
-                             <width>354</width>
-                             <height>422</height>
+                             <width>712</width>
+                             <height>481</height>
                             </rect>
                            </property>
                            <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -815,7 +815,7 @@ color: rgb(174, 84, 79);</string>
                             <rect>
                              <x>0</x>
                              <y>0</y>
-                             <width>337</width>
+                             <width>681</width>
                              <height>783</height>
                             </rect>
                            </property>
@@ -1254,29 +1254,23 @@ QPushButton:checked {
                    </layout>
                   </widget>
                   <widget class="QWidget" name="add_package">
-                   <widget class="QFrame" name="frame_15">
-                    <property name="geometry">
-                     <rect>
-                      <x>0</x>
-                      <y>30</y>
-                      <width>374</width>
-                      <height>50</height>
-                     </rect>
-                    </property>
-                    <property name="minimumSize">
-                     <size>
-                      <width>0</width>
-                      <height>50</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>50</height>
-                     </size>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">#frame_5{
+                   <layout class="QVBoxLayout" name="verticalLayout_19">
+                    <item>
+                     <widget class="QFrame" name="frame_15">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">#frame_5{
 background: #FFF3F2;
 }
 
@@ -1310,117 +1304,1466 @@ QPushButton:checked {
 	background-color: #AE544F;
  	color: #FFFFFF;
 }</string>
-                    </property>
-                    <property name="frameShape">
-                     <enum>QFrame::StyledPanel</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <property name="lineWidth">
-                     <number>0</number>
-                    </property>
-                    <layout class="QHBoxLayout" name="horizontalLayout_7">
-                     <item>
-                      <widget class="QPushButton" name="btn_view_package_2">
-                       <property name="text">
-                        <string>View Packages</string>
-                       </property>
-                       <property name="icon">
-                        <iconset resource="../../icon/icon.qrc">
-                         <normaloff>:/newPrefix/View boards.svg</normaloff>
-                         <normalon>:/newPrefix/View boards-1.svg</normalon>:/newPrefix/View boards.svg</iconset>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QPushButton" name="btn_add_package_2">
-                       <property name="text">
-                        <string>Add Packages</string>
-                       </property>
-                       <property name="icon">
-                        <iconset resource="../../icon/icon.qrc">
-                         <normaloff>:/newPrefix/Add.svg</normaloff>
-                         <normalon>:/newPrefix/Add_W.svg</normalon>:/newPrefix/Add.svg</iconset>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <spacer name="horizontalSpacer_3">
-                       <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>56</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
-                    </layout>
-                   </widget>
-                   <widget class="QStackedWidget" name="admin_mgt_package_screens_2">
-                    <property name="geometry">
-                     <rect>
-                      <x>10</x>
-                      <y>100</y>
-                      <width>374</width>
-                      <height>468</height>
-                     </rect>
-                    </property>
-                    <property name="currentIndex">
-                     <number>0</number>
-                    </property>
-                    <widget class="QWidget" name="page_5">
-                     <layout class="QVBoxLayout" name="verticalLayout_14">
-                      <item>
-                       <widget class="QLabel" name="label_10">
-                        <property name="styleSheet">
-                         <string notr="true">font: 12pt &quot;SF Pro Display&quot;;
-color: rgb(174, 84, 79);</string>
-                        </property>
-                        <property name="text">
-                         <string>Manage Package / View Packages</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QScrollArea" name="display_mgt_package_2">
-                        <property name="widgetResizable">
-                         <bool>true</bool>
-                        </property>
-                        <widget class="QWidget" name="scrollAreaWidgetContents_3">
-                         <property name="geometry">
-                          <rect>
-                           <x>0</x>
-                           <y>0</y>
-                           <width>354</width>
-                           <height>422</height>
-                          </rect>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <property name="lineWidth">
+                       <number>0</number>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_7">
+                       <item>
+                        <widget class="QPushButton" name="btn_view_package_2">
+                         <property name="text">
+                          <string>View Packages</string>
                          </property>
-                         <layout class="QVBoxLayout" name="verticalLayout_15">
-                          <item>
-                           <spacer name="verticalSpacer_4">
-                            <property name="orientation">
-                             <enum>Qt::Vertical</enum>
-                            </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>20</width>
-                              <height>401</height>
-                             </size>
-                            </property>
-                           </spacer>
-                          </item>
-                         </layout>
+                         <property name="icon">
+                          <iconset resource="../../icon/icon.qrc">
+                           <normaloff>:/newPrefix/View boards.svg</normaloff>
+                           <normalon>:/newPrefix/View boards-1.svg</normalon>:/newPrefix/View boards.svg</iconset>
+                         </property>
                         </widget>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                    <widget class="QWidget" name="page_6"/>
-                   </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_add_package_2">
+                         <property name="text">
+                          <string>Add Packages</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../../icon/icon.qrc">
+                           <normaloff>:/newPrefix/Add.svg</normaloff>
+                           <normalon>:/newPrefix/Add_W.svg</normalon>:/newPrefix/Add.svg</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_3">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>56</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QStackedWidget" name="admin_mgt_package_screens_2">
+                      <property name="currentIndex">
+                       <number>1</number>
+                      </property>
+                      <widget class="QWidget" name="page_5">
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <item>
+                         <widget class="QLabel" name="label_10">
+                          <property name="styleSheet">
+                           <string notr="true">font: 12pt &quot;SF Pro Display&quot;;
+color: rgb(174, 84, 79);</string>
+                          </property>
+                          <property name="text">
+                           <string>Manage Staff / View Staff</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QScrollArea" name="display_mgt_package_2">
+                          <property name="widgetResizable">
+                           <bool>true</bool>
+                          </property>
+                          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                           <property name="geometry">
+                            <rect>
+                             <x>0</x>
+                             <y>0</y>
+                             <width>712</width>
+                             <height>481</height>
+                            </rect>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_9">
+                            <item>
+                             <widget class="QScrollArea" name="staff_member_list">
+                              <property name="minimumSize">
+                               <size>
+                                <width>200</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                              <property name="widgetResizable">
+                               <bool>true</bool>
+                              </property>
+                              <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                               <property name="geometry">
+                                <rect>
+                                 <x>0</x>
+                                 <y>0</y>
+                                 <width>314</width>
+                                 <height>461</height>
+                                </rect>
+                               </property>
+                              </widget>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QScrollArea" name="scrollArea_2">
+                              <property name="minimumSize">
+                               <size>
+                                <width>200</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">
+
+
+background-color: rgb(199, 156, 153);
+</string>
+                              </property>
+                              <property name="widgetResizable">
+                               <bool>true</bool>
+                              </property>
+                              <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                               <property name="geometry">
+                                <rect>
+                                 <x>0</x>
+                                 <y>0</y>
+                                 <width>353</width>
+                                 <height>537</height>
+                                </rect>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_15">
+                                <item>
+                                 <widget class="QFrame" name="frame_18">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                   <item>
+                                    <spacer name="horizontalSpacer_7">
+                                     <property name="orientation">
+                                      <enum>Qt::Horizontal</enum>
+                                     </property>
+                                     <property name="sizeHint" stdset="0">
+                                      <size>
+                                       <width>124</width>
+                                       <height>20</height>
+                                      </size>
+                                     </property>
+                                    </spacer>
+                                   </item>
+                                   <item>
+                                    <widget class="QLabel" name="staff_member_pp">
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>80</width>
+                                       <height>80</height>
+                                      </size>
+                                     </property>
+                                     <property name="styleSheet">
+                                      <string notr="true">background-color: rgb(168, 168, 168);</string>
+                                     </property>
+                                     <property name="text">
+                                      <string/>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <spacer name="horizontalSpacer_8">
+                                     <property name="orientation">
+                                      <enum>Qt::Horizontal</enum>
+                                     </property>
+                                     <property name="sizeHint" stdset="0">
+                                      <size>
+                                       <width>18</width>
+                                       <height>20</height>
+                                      </size>
+                                     </property>
+                                    </spacer>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <layout class="QFormLayout" name="formLayout_2">
+                                  <item row="0" column="0">
+                                   <widget class="QLabel" name="label_21">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Staff id</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="0" column="1">
+                                   <widget class="QLineEdit" name="view_s_id">
+                                    <property name="styleSheet">
+                                     <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>S001</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="1" column="0">
+                                   <widget class="QLabel" name="label_22">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Name</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="1" column="1">
+                                   <widget class="QLineEdit" name="view_s_name">
+                                    <property name="styleSheet">
+                                     <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>Staff Member Name</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="2" column="0">
+                                   <widget class="QLabel" name="label_23">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Gander</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="3" column="0">
+                                   <widget class="QLabel" name="label_20">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Department</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="4" column="0">
+                                   <widget class="QLabel" name="label_24">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Address</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="4" column="1">
+                                   <widget class="QTextEdit" name="view_s_address">
+                                    <property name="maximumSize">
+                                     <size>
+                                      <width>16777215</width>
+                                      <height>80</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">QTextEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>Staff Member's Address</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="5" column="0">
+                                   <widget class="QLabel" name="label_25">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Tel. Number</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="5" column="1">
+                                   <widget class="QLineEdit" name="view_s_tel">
+                                    <property name="styleSheet">
+                                     <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>07X XX XX XXX</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="6" column="0">
+                                   <widget class="QLabel" name="label_26">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>E-mail</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="6" column="1">
+                                   <widget class="QLineEdit" name="view_s_email">
+                                    <property name="styleSheet">
+                                     <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>emample : xyz@gmail.com</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="7" column="0">
+                                   <widget class="QLabel" name="label_27">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: rgb(255, 255, 255);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Salary</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="7" column="1">
+                                   <widget class="QLineEdit" name="view_s_salary">
+                                    <property name="styleSheet">
+                                     <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>Rs. 45000.00</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="2" column="1">
+                                   <widget class="QLineEdit" name="view_s_gender">
+                                    <property name="styleSheet">
+                                     <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>example : Male</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="3" column="1">
+                                   <widget class="QLineEdit" name="view_s_department">
+                                    <property name="styleSheet">
+                                     <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                    </property>
+                                    <property name="placeholderText">
+                                     <string>example : Maintenance</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <widget class="QFrame" name="frame_21">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                                   <item>
+                                    <spacer name="horizontalSpacer_9">
+                                     <property name="orientation">
+                                      <enum>Qt::Horizontal</enum>
+                                     </property>
+                                     <property name="sizeHint" stdset="0">
+                                      <size>
+                                       <width>5</width>
+                                       <height>20</height>
+                                      </size>
+                                     </property>
+                                    </spacer>
+                                   </item>
+                                   <item>
+                                    <widget class="QPushButton" name="view_s_update">
+                                     <property name="sizePolicy">
+                                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                       <horstretch>0</horstretch>
+                                       <verstretch>0</verstretch>
+                                      </sizepolicy>
+                                     </property>
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>120</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="styleSheet">
+                                      <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                                     </property>
+                                     <property name="text">
+                                      <string>Update</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <spacer name="horizontalSpacer_10">
+                                     <property name="orientation">
+                                      <enum>Qt::Horizontal</enum>
+                                     </property>
+                                     <property name="sizeHint" stdset="0">
+                                      <size>
+                                       <width>31</width>
+                                       <height>20</height>
+                                      </size>
+                                     </property>
+                                    </spacer>
+                                   </item>
+                                   <item>
+                                    <widget class="QPushButton" name="view_s_delete">
+                                     <property name="sizePolicy">
+                                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                                       <horstretch>0</horstretch>
+                                       <verstretch>0</verstretch>
+                                      </sizepolicy>
+                                     </property>
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>120</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="styleSheet">
+                                      <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #4C4C6C;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                                     </property>
+                                     <property name="text">
+                                      <string>Delete</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <spacer name="horizontalSpacer_11">
+                                     <property name="orientation">
+                                      <enum>Qt::Horizontal</enum>
+                                     </property>
+                                     <property name="sizeHint" stdset="0">
+                                      <size>
+                                       <width>32</width>
+                                       <height>20</height>
+                                      </size>
+                                     </property>
+                                    </spacer>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </widget>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_6">
+                       <layout class="QVBoxLayout" name="verticalLayout_20">
+                        <item>
+                         <widget class="QLabel" name="label_19">
+                          <property name="styleSheet">
+                           <string notr="true">font: 12pt &quot;SF Pro Display&quot;;
+color: rgb(174, 84, 79);</string>
+                          </property>
+                          <property name="text">
+                           <string>Manage Staff / View Staff</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QScrollArea" name="scrollArea_3">
+                          <property name="minimumSize">
+                           <size>
+                            <width>200</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true"/>
+                          </property>
+                          <property name="widgetResizable">
+                           <bool>true</bool>
+                          </property>
+                          <widget class="QWidget" name="scrollAreaWidgetContents_8">
+                           <property name="geometry">
+                            <rect>
+                             <x>-356</x>
+                             <y>0</y>
+                             <width>693</width>
+                             <height>510</height>
+                            </rect>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_12">
+                            <item>
+                             <widget class="QFrame" name="frame_19">
+                              <property name="frameShape">
+                               <enum>QFrame::StyledPanel</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                              <layout class="QVBoxLayout" name="verticalLayout_24">
+                               <property name="leftMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="topMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="rightMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="bottomMargin">
+                                <number>0</number>
+                               </property>
+                               <item>
+                                <layout class="QFormLayout" name="formLayout_3">
+                                 <item row="0" column="0">
+                                  <widget class="QLabel" name="label_36">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Staff id</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="0">
+                                  <widget class="QLabel" name="label_28">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Staff id</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="1" column="1">
+                                  <widget class="QLineEdit" name="upload_s_id_2">
+                                   <property name="styleSheet">
+                                    <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <property name="placeholderText">
+                                    <string>S001</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="2" column="0">
+                                  <widget class="QLabel" name="label_29">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Name</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="2" column="1">
+                                  <widget class="QLineEdit" name="upload_s_name_2">
+                                   <property name="styleSheet">
+                                    <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <property name="placeholderText">
+                                    <string>Staff Member Name</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="3" column="0">
+                                  <widget class="QLabel" name="label_30">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Gander</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="4" column="0">
+                                  <widget class="QLabel" name="label_31">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Department</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="5" column="0">
+                                  <widget class="QLabel" name="label_32">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Address</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="5" column="1">
+                                  <widget class="QTextEdit" name="upload_s_address_2">
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>16777215</width>
+                                     <height>80</height>
+                                    </size>
+                                   </property>
+                                   <property name="styleSheet">
+                                    <string notr="true">QTextEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <property name="placeholderText">
+                                    <string>Staff Member's Address</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="6" column="0">
+                                  <widget class="QLabel" name="label_33">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Tel. Number</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="6" column="1">
+                                  <widget class="QLineEdit" name="upload_s_tel_2">
+                                   <property name="styleSheet">
+                                    <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <property name="placeholderText">
+                                    <string>07X XX XX XXX</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="7" column="0">
+                                  <widget class="QLabel" name="label_34">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>E-mail</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="7" column="1">
+                                  <widget class="QLineEdit" name="upload_s_email_2">
+                                   <property name="styleSheet">
+                                    <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <property name="placeholderText">
+                                    <string>emample : xyz@gmail.com</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="8" column="0">
+                                  <widget class="QLabel" name="label_35">
+                                   <property name="styleSheet">
+                                    <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                   </property>
+                                   <property name="text">
+                                    <string>Salary</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="8" column="1">
+                                  <widget class="QLineEdit" name="upload_s_salary_2">
+                                   <property name="styleSheet">
+                                    <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <property name="placeholderText">
+                                    <string>Rs. 45000.00</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                 <item row="0" column="1">
+                                  <widget class="QFrame" name="frame_25">
+                                   <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                                     <horstretch>0</horstretch>
+                                     <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                   </property>
+                                   <property name="minimumSize">
+                                    <size>
+                                     <width>0</width>
+                                     <height>120</height>
+                                    </size>
+                                   </property>
+                                   <property name="maximumSize">
+                                    <size>
+                                     <width>16777215</width>
+                                     <height>100</height>
+                                    </size>
+                                   </property>
+                                   <property name="frameShape">
+                                    <enum>QFrame::StyledPanel</enum>
+                                   </property>
+                                   <property name="frameShadow">
+                                    <enum>QFrame::Raised</enum>
+                                   </property>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                                    <item>
+                                     <widget class="QLabel" name="upload_staff_member_pp_2">
+                                      <property name="sizePolicy">
+                                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                        <horstretch>50</horstretch>
+                                        <verstretch>50</verstretch>
+                                       </sizepolicy>
+                                      </property>
+                                      <property name="minimumSize">
+                                       <size>
+                                        <width>100</width>
+                                        <height>100</height>
+                                       </size>
+                                      </property>
+                                      <property name="maximumSize">
+                                       <size>
+                                        <width>80</width>
+                                        <height>80</height>
+                                       </size>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: rgb(168, 168, 168);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <spacer name="horizontalSpacer_15">
+                                      <property name="orientation">
+                                       <enum>Qt::Horizontal</enum>
+                                      </property>
+                                      <property name="sizeType">
+                                       <enum>QSizePolicy::Minimum</enum>
+                                      </property>
+                                      <property name="sizeHint" stdset="0">
+                                       <size>
+                                        <width>13</width>
+                                        <height>20</height>
+                                       </size>
+                                      </property>
+                                     </spacer>
+                                    </item>
+                                    <item>
+                                     <widget class="QPushButton" name="view_s_update_5">
+                                      <property name="sizePolicy">
+                                       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                       </sizepolicy>
+                                      </property>
+                                      <property name="minimumSize">
+                                       <size>
+                                        <width>120</width>
+                                        <height>0</height>
+                                       </size>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Upload Image</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <spacer name="horizontalSpacer_16">
+                                      <property name="orientation">
+                                       <enum>Qt::Horizontal</enum>
+                                      </property>
+                                      <property name="sizeHint" stdset="0">
+                                       <size>
+                                        <width>17</width>
+                                        <height>20</height>
+                                       </size>
+                                      </property>
+                                     </spacer>
+                                    </item>
+                                   </layout>
+                                  </widget>
+                                 </item>
+                                 <item row="3" column="1">
+                                  <widget class="QComboBox" name="upload_s_gender">
+                                   <property name="styleSheet">
+                                    <string notr="true">QComboBox{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <item>
+                                    <property name="text">
+                                     <string>Male</string>
+                                    </property>
+                                   </item>
+                                   <item>
+                                    <property name="text">
+                                     <string>Female</string>
+                                    </property>
+                                   </item>
+                                  </widget>
+                                 </item>
+                                 <item row="4" column="1">
+                                  <widget class="QComboBox" name="upload_s_department">
+                                   <property name="styleSheet">
+                                    <string notr="true">QComboBox{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+                                   </property>
+                                   <item>
+                                    <property name="text">
+                                     <string>Maintainence</string>
+                                    </property>
+                                   </item>
+                                   <item>
+                                    <property name="text">
+                                     <string>Kitchen</string>
+                                    </property>
+                                   </item>
+                                   <item>
+                                    <property name="text">
+                                     <string>Housekeeping</string>
+                                    </property>
+                                   </item>
+                                   <item>
+                                    <property name="text">
+                                     <string>Banquets</string>
+                                    </property>
+                                   </item>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QFrame" name="frame_20">
+                              <property name="frameShape">
+                               <enum>QFrame::StyledPanel</enum>
+                              </property>
+                              <property name="frameShadow">
+                               <enum>QFrame::Raised</enum>
+                              </property>
+                              <layout class="QVBoxLayout" name="verticalLayout_21">
+                               <property name="spacing">
+                                <number>0</number>
+                               </property>
+                               <property name="leftMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="topMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="rightMargin">
+                                <number>0</number>
+                               </property>
+                               <property name="bottomMargin">
+                                <number>0</number>
+                               </property>
+                               <item>
+                                <widget class="QFrame" name="frame_22">
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                 <layout class="QVBoxLayout" name="verticalLayout_23">
+                                  <item>
+                                   <widget class="QLabel" name="label_37">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Grama Niladhari Certificate</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QPushButton" name="s_upload_g_certificate">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>120</width>
+                                      <height>0</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Upload</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="view_s_upload_g_certificate">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>240</width>
+                                      <height>140</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: rgb(168, 168, 168);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string/>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QFrame" name="frame_23">
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                                  <item>
+                                   <widget class="QLabel" name="label_38">
+                                    <property name="styleSheet">
+                                     <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
+color: #a8a8a8;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Police Report</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QPushButton" name="s_upload_p_certificate">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>120</width>
+                                      <height>0</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Upload</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLabel" name="view_s_upload_p_certificate">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>240</width>
+                                      <height>140</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: rgb(168, 168, 168);</string>
+                                    </property>
+                                    <property name="text">
+                                     <string/>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
+                               <item>
+                                <spacer name="verticalSpacer_4">
+                                 <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>20</width>
+                                   <height>30</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                               <item>
+                                <widget class="QFrame" name="frame_24">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>0</width>
+                                   <height>50</height>
+                                  </size>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_13">
+                                  <item>
+                                   <spacer name="horizontalSpacer_14">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>4</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                  <item>
+                                   <widget class="QPushButton" name="view_s_update_2">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>120</width>
+                                      <height>0</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Clear</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <spacer name="horizontalSpacer_12">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>2</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                  <item>
+                                   <widget class="QPushButton" name="view_s_delete_2">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>120</width>
+                                      <height>0</height>
+                                     </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #4C4C6C;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Save</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <spacer name="horizontalSpacer_13">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>1</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </widget>
                 </item>
@@ -1543,28 +2886,12 @@ color: rgb(174, 84, 79);</string>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>316</x>
-     <y>907</y>
+     <x>497</x>
+     <y>915</y>
     </hint>
     <hint type="destinationlabel">
-     <x>368</x>
-     <y>740</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>btn_clear</sender>
-   <signal>clicked()</signal>
-   <receiver>txt_p_description</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>345</x>
-     <y>904</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>378</x>
-     <y>326</y>
+     <x>697</x>
+     <y>738</y>
     </hint>
    </hints>
   </connection>
@@ -1575,12 +2902,12 @@ color: rgb(174, 84, 79);</string>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>371</x>
-     <y>909</y>
+     <x>497</x>
+     <y>915</y>
     </hint>
     <hint type="destinationlabel">
-     <x>380</x>
-     <y>219</y>
+     <x>893</x>
+     <y>236</y>
     </hint>
    </hints>
   </connection>
@@ -1591,12 +2918,172 @@ color: rgb(174, 84, 79);</string>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>299</x>
-     <y>907</y>
+     <x>497</x>
+     <y>915</y>
     </hint>
     <hint type="destinationlabel">
-     <x>362</x>
-     <y>171</y>
+     <x>893</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>txt_p_description</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>497</x>
+     <y>915</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>893</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>upload_s_name_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>743</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>576</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>upload_s_id_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>724</x>
+     <y>604</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>upload_staff_member_pp_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>upload_s_address_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>659</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>589</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>upload_s_tel_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>642</x>
+     <y>597</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>557</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>upload_s_email_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>569</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>upload_s_salary_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>708</x>
+     <y>607</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>552</x>
+     <y>617</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>view_s_upload_g_certificate</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>669</x>
+     <y>598</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>780</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>view_s_update_2</sender>
+   <signal>clicked()</signal>
+   <receiver>view_s_upload_p_certificate</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>609</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>710</x>
+     <y>517</y>
     </hint>
    </hints>
   </connection>
