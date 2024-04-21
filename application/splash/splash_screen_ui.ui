@@ -67,6 +67,9 @@
           <height>338</height>
          </size>
         </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
         <property name="text">
          <string/>
         </property>

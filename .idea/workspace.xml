@@ -5,45 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/admin-main/admin-main.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/login/login.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/login/signup.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Add_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Assistant.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Assistant_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Feedback.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Feedback_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Help.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Help_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Home_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/P_msg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/P_msg_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Partners_List.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Partners_List_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Report.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Report_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/See_how_works.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/See_how_works_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Status.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/Status_W.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/View boards-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/View boards.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/check2-square 1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/icon.qrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/logout-svgrepo-com(1).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/logout-svgrepo-com.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/setting_dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/setting_light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/un_check2-square 2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/ui_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/splash/splash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/splash/ui_splash_screen_ui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/splash_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/XYZ Hotel Management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/XYZ Hotel Management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin-main/admin-main.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/login/login.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/login.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/splash/splash_screen_ui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/splash/splash_screen_ui.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon/icon.qrc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,16 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/XYZ Hotel Management"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/XYZ Hotel Management&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

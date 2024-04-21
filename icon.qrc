@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icon/logout-svgrepo-com.svg</file>
+    <file>icon/logout-svgrepo-com(1).svg</file>
+    <file>icon/x-circle 2.svg</file>
+    <file>icon/x-circle.svg</file>
+    <file>icon/Add.svg</file>
+    <file>icon/Add_W.svg</file>
+    <file>icon/Assistant.svg</file>
+    <file>icon/Assistant_W.svg</file>
+    <file>icon/check2-square 1.svg</file>
+    <file>icon/Feedback.svg</file>
+    <file>icon/Feedback_W.svg</file>
+    <file>icon/Help.svg</file>
+    <file>icon/Help_W.svg</file>
+    <file>icon/Home.svg</file>
+    <file>icon/Home_W.svg</file>
+    <file>icon/P_msg.svg</file>
+    <file>icon/P_msg_W.svg</file>
+    <file>icon/Partners_List.svg</file>
+    <file>icon/Partners_List_W.svg</file>
+    <file>icon/Report.svg</file>
+    <file>icon/Report_W.svg</file>
+    <file>icon/Search.svg</file>
+    <file>icon/See_how_works.svg</file>
+    <file>icon/See_how_works_W.svg</file>
+    <file>icon/setting_dark.svg</file>
+    <file>icon/setting_light.svg</file>
+    <file>icon/Status.svg</file>
+    <file>icon/Status_W.svg</file>
+    <file>icon/un_check2-square 2.svg</file>
+    <file>icon/View boards.svg</file>
+    <file>icon/View boards-1.svg</file>
+  </qresource>
+</RCC>

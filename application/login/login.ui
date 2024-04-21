@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>684</width>
+    <width>640</width>
     <height>464</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>16777215</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>XYZ - login </string>
@@ -17,6 +23,21 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QFrame" name="frame">
      <property name="frameShape">
@@ -26,6 +47,21 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
       <item>
        <widget class="QLabel" name="label_5">
         <property name="minimumSize">
@@ -44,6 +80,12 @@
    </item>
    <item>
     <widget class="QFrame" name="frame_2">
+     <property name="maximumSize">
+      <size>
+       <width>330</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="styleSheet">
       <string notr="true">font-family: 'SF Pro Display';</string>
      </property>
@@ -54,6 +96,9 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_8">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
       <item>
        <widget class="QFrame" name="frame_3">
         <property name="frameShape">
@@ -125,9 +170,9 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="../../icon/icon.qrc">
-                <normaloff>:/newPrefix/x-circle.svg</normaloff>
-                <normalon>:/newPrefix/x-circle 2.svg</normalon>:/newPrefix/x-circle.svg</iconset>
+               <iconset resource="../../icon.qrc">
+                <normaloff>:/newPrefix/icon/x-circle.svg</normaloff>
+                <normalon>:/newPrefix/icon/x-circle 2.svg</normalon>:/newPrefix/icon/x-circle.svg</iconset>
               </property>
              </widget>
             </item>
@@ -188,7 +233,7 @@
              <number>0</number>
             </property>
             <item>
-             <widget class="QLineEdit" name="0">
+             <widget class="QLineEdit" name="txt_u_name">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -232,7 +277,7 @@ font: 11pt &quot;SF Pro Display&quot;;</string>
              <number>0</number>
             </property>
             <item>
-             <widget class="QLineEdit" name="lineEdit_3">
+             <widget class="QLineEdit" name="txt_u_pass">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -279,7 +324,7 @@ font: 11pt &quot;SF Pro Display&quot;;</string>
              <number>0</number>
             </property>
             <item>
-             <widget class="QComboBox" name="comboBox">
+             <widget class="QComboBox" name="cmb_u_acc_type">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -330,7 +375,7 @@ font: 10pt &quot;SF Pro Display&quot;;
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QPushButton" name="pushButton_2">
+          <widget class="QPushButton" name="btn_login">
            <property name="minimumSize">
             <size>
              <width>40</width>
@@ -352,7 +397,7 @@ color: rgb(255, 255, 255);</string>
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_4">
+          <widget class="QLabel" name="btn_forgot_pass">
            <property name="cursor">
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
@@ -387,7 +432,7 @@ color: rgb(255, 255, 255);</string>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="btn_create_acc">
            <property name="cursor">
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
@@ -408,7 +453,7 @@ color: rgb(255, 255, 255);</string>
   </layout>
  </widget>
  <resources>
-  <include location="../../icon/icon.qrc"/>
+  <include location="../../icon.qrc"/>
  </resources>
  <connections>
   <connection>
