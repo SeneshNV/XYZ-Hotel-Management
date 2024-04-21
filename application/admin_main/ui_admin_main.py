@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'admin_mainGKIbGE.ui'
+## Form generated from reading UI file 'admin_mainjFmYZR.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -193,6 +193,7 @@ class Ui_MainWindow(object):
         icon.addFile(u":/newPrefix/icon/Home_W.svg", QSize(), QIcon.Normal, QIcon.On)
         self.btn_dashboard.setIcon(icon)
         self.btn_dashboard.setCheckable(True)
+        self.btn_dashboard.setChecked(True)
 
         self.verticalLayout_7.addWidget(self.btn_dashboard)
 
@@ -338,6 +339,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_10.setContentsMargins(0, 0, 0, 0)
         self.admin_screens = QStackedWidget(self.frame_7)
         self.admin_screens.setObjectName(u"admin_screens")
+        self.dashboard = QWidget()
+        self.dashboard.setObjectName(u"dashboard")
+        self.admin_screens.addWidget(self.dashboard)
         self.mgt_package = QWidget()
         self.mgt_package.setObjectName(u"mgt_package")
         self.verticalLayout_11 = QVBoxLayout(self.mgt_package)
@@ -387,19 +391,19 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.btn_view_package = QPushButton(self.frame_5)
         self.btn_view_package.setObjectName(u"btn_view_package")
-        icon7 = QIcon()
-        icon7.addFile(u":/newPrefix/View boards.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon7.addFile(u":/newPrefix/View boards-1.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_view_package.setIcon(icon7)
+        self.btn_view_package.setIcon(icon3)
+        self.btn_view_package.setCheckable(True)
+        self.btn_view_package.setChecked(True)
 
         self.horizontalLayout_6.addWidget(self.btn_view_package)
 
         self.btn_add_package = QPushButton(self.frame_5)
         self.btn_add_package.setObjectName(u"btn_add_package")
-        icon8 = QIcon()
-        icon8.addFile(u":/newPrefix/Add.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon8.addFile(u":/newPrefix/Add_W.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_add_package.setIcon(icon8)
+        icon7 = QIcon()
+        icon7.addFile(u":/newPrefix/icon/Add.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u":/newPrefix/icon/Add_W.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.btn_add_package.setIcon(icon7)
+        self.btn_add_package.setCheckable(True)
 
         self.horizontalLayout_6.addWidget(self.btn_add_package)
 
@@ -412,23 +416,23 @@ class Ui_MainWindow(object):
 
         self.admin_mgt_package_screens = QStackedWidget(self.mgt_package)
         self.admin_mgt_package_screens.setObjectName(u"admin_mgt_package_screens")
-        self.page_3 = QWidget()
-        self.page_3.setObjectName(u"page_3")
-        self.verticalLayout_12 = QVBoxLayout(self.page_3)
+        self.view_package = QWidget()
+        self.view_package.setObjectName(u"view_package")
+        self.verticalLayout_12 = QVBoxLayout(self.view_package)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
-        self.label_9 = QLabel(self.page_3)
+        self.label_9 = QLabel(self.view_package)
         self.label_9.setObjectName(u"label_9")
         self.label_9.setStyleSheet(u"font: 12pt \"SF Pro Display\";\n"
 "color: rgb(174, 84, 79);")
 
         self.verticalLayout_12.addWidget(self.label_9)
 
-        self.display_mgt_package = QScrollArea(self.page_3)
+        self.display_mgt_package = QScrollArea(self.view_package)
         self.display_mgt_package.setObjectName(u"display_mgt_package")
         self.display_mgt_package.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 98, 28))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 354, 422))
         self.verticalLayout_13 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.verticalSpacer_3 = QSpacerItem(20, 401, QSizePolicy.Minimum, QSizePolicy.Expanding)
@@ -439,26 +443,26 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_12.addWidget(self.display_mgt_package)
 
-        self.admin_mgt_package_screens.addWidget(self.page_3)
-        self.page_4 = QWidget()
-        self.page_4.setObjectName(u"page_4")
-        self.verticalLayout_17 = QVBoxLayout(self.page_4)
+        self.admin_mgt_package_screens.addWidget(self.view_package)
+        self.add_package = QWidget()
+        self.add_package.setObjectName(u"add_package")
+        self.verticalLayout_17 = QVBoxLayout(self.add_package)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
-        self.label_11 = QLabel(self.page_4)
+        self.label_11 = QLabel(self.add_package)
         self.label_11.setObjectName(u"label_11")
         self.label_11.setStyleSheet(u"font: 12pt \"SF Pro Display\";\n"
 "color: rgb(174, 84, 79);")
 
         self.verticalLayout_17.addWidget(self.label_11)
 
-        self.display_mgt_package_3 = QScrollArea(self.page_4)
+        self.display_mgt_package_3 = QScrollArea(self.add_package)
         self.display_mgt_package_3.setObjectName(u"display_mgt_package_3")
         self.display_mgt_package_3.setMinimumSize(QSize(0, 424))
         self.display_mgt_package_3.setMaximumSize(QSize(700, 16777215))
         self.display_mgt_package_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_4 = QWidget()
         self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
-        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 335, 783))
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 337, 783))
         self.verticalLayout_16 = QVBoxLayout(self.scrollAreaWidgetContents_4)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.formLayout = QFormLayout()
@@ -773,20 +777,20 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_17.addWidget(self.display_mgt_package_3)
 
-        self.admin_mgt_package_screens.addWidget(self.page_4)
+        self.admin_mgt_package_screens.addWidget(self.add_package)
 
         self.verticalLayout_11.addWidget(self.admin_mgt_package_screens)
 
         self.admin_screens.addWidget(self.mgt_package)
-        self.add_package = QWidget()
-        self.add_package.setObjectName(u"add_package")
-        self.verticalLayout_19 = QVBoxLayout(self.add_package)
+        self.mgt_staff = QWidget()
+        self.mgt_staff.setObjectName(u"mgt_staff")
+        self.verticalLayout_19 = QVBoxLayout(self.mgt_staff)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
-        self.frame_15 = QFrame(self.add_package)
+        self.frame_15 = QFrame(self.mgt_staff)
         self.frame_15.setObjectName(u"frame_15")
         self.frame_15.setMinimumSize(QSize(0, 50))
         self.frame_15.setMaximumSize(QSize(16777215, 50))
-        self.frame_15.setStyleSheet(u"#frame_5{\n"
+        self.frame_15.setStyleSheet(u"#frame_15{\n"
 "background: #FFF3F2;\n"
 "}\n"
 "\n"
@@ -825,20 +829,20 @@ class Ui_MainWindow(object):
         self.frame_15.setLineWidth(0)
         self.horizontalLayout_7 = QHBoxLayout(self.frame_15)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.btn_view_package_2 = QPushButton(self.frame_15)
-        self.btn_view_package_2.setObjectName(u"btn_view_package_2")
-        self.btn_view_package_2.setIcon(icon3)
+        self.btn_view_staff = QPushButton(self.frame_15)
+        self.btn_view_staff.setObjectName(u"btn_view_staff")
+        self.btn_view_staff.setIcon(icon3)
+        self.btn_view_staff.setCheckable(True)
+        self.btn_view_staff.setChecked(True)
 
-        self.horizontalLayout_7.addWidget(self.btn_view_package_2)
+        self.horizontalLayout_7.addWidget(self.btn_view_staff)
 
-        self.btn_add_package_2 = QPushButton(self.frame_15)
-        self.btn_add_package_2.setObjectName(u"btn_add_package_2")
-        icon9 = QIcon()
-        icon9.addFile(u":/newPrefix/icon/Add.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon9.addFile(u":/newPrefix/icon/Add_W.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_add_package_2.setIcon(icon9)
+        self.btn_add_staff = QPushButton(self.frame_15)
+        self.btn_add_staff.setObjectName(u"btn_add_staff")
+        self.btn_add_staff.setIcon(icon7)
+        self.btn_add_staff.setCheckable(True)
 
-        self.horizontalLayout_7.addWidget(self.btn_add_package_2)
+        self.horizontalLayout_7.addWidget(self.btn_add_staff)
 
         self.horizontalSpacer_3 = QSpacerItem(56, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -847,25 +851,25 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_19.addWidget(self.frame_15)
 
-        self.admin_mgt_package_screens_2 = QStackedWidget(self.add_package)
+        self.admin_mgt_package_screens_2 = QStackedWidget(self.mgt_staff)
         self.admin_mgt_package_screens_2.setObjectName(u"admin_mgt_package_screens_2")
-        self.page_5 = QWidget()
-        self.page_5.setObjectName(u"page_5")
-        self.verticalLayout_14 = QVBoxLayout(self.page_5)
+        self.view_staff = QWidget()
+        self.view_staff.setObjectName(u"view_staff")
+        self.verticalLayout_14 = QVBoxLayout(self.view_staff)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
-        self.label_10 = QLabel(self.page_5)
+        self.label_10 = QLabel(self.view_staff)
         self.label_10.setObjectName(u"label_10")
         self.label_10.setStyleSheet(u"font: 12pt \"SF Pro Display\";\n"
 "color: rgb(174, 84, 79);")
 
         self.verticalLayout_14.addWidget(self.label_10)
 
-        self.display_mgt_package_2 = QScrollArea(self.page_5)
+        self.display_mgt_package_2 = QScrollArea(self.view_staff)
         self.display_mgt_package_2.setObjectName(u"display_mgt_package_2")
         self.display_mgt_package_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_3 = QWidget()
         self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 424, 89))
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 424, 405))
         self.horizontalLayout_9 = QHBoxLayout(self.scrollAreaWidgetContents_3)
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.staff_member_list = QScrollArea(self.scrollAreaWidgetContents_3)
@@ -874,7 +878,7 @@ class Ui_MainWindow(object):
         self.staff_member_list.setWidgetResizable(True)
         self.scrollAreaWidgetContents_5 = QWidget()
         self.scrollAreaWidgetContents_5.setObjectName(u"scrollAreaWidgetContents_5")
-        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 198, 28))
+        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 198, 385))
         self.staff_member_list.setWidget(self.scrollAreaWidgetContents_5)
 
         self.horizontalLayout_9.addWidget(self.staff_member_list)
@@ -1194,19 +1198,19 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_14.addWidget(self.display_mgt_package_2)
 
-        self.admin_mgt_package_screens_2.addWidget(self.page_5)
-        self.page_6 = QWidget()
-        self.page_6.setObjectName(u"page_6")
-        self.verticalLayout_20 = QVBoxLayout(self.page_6)
+        self.admin_mgt_package_screens_2.addWidget(self.view_staff)
+        self.add_staff = QWidget()
+        self.add_staff.setObjectName(u"add_staff")
+        self.verticalLayout_20 = QVBoxLayout(self.add_staff)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.label_19 = QLabel(self.page_6)
+        self.label_19 = QLabel(self.add_staff)
         self.label_19.setObjectName(u"label_19")
         self.label_19.setStyleSheet(u"font: 12pt \"SF Pro Display\";\n"
 "color: rgb(174, 84, 79);")
 
         self.verticalLayout_20.addWidget(self.label_19)
 
-        self.scrollArea_3 = QScrollArea(self.page_6)
+        self.scrollArea_3 = QScrollArea(self.add_staff)
         self.scrollArea_3.setObjectName(u"scrollArea_3")
         self.scrollArea_3.setMinimumSize(QSize(200, 0))
         self.scrollArea_3.setStyleSheet(u"")
@@ -1730,11 +1734,11 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_20.addWidget(self.scrollArea_3)
 
-        self.admin_mgt_package_screens_2.addWidget(self.page_6)
+        self.admin_mgt_package_screens_2.addWidget(self.add_staff)
 
         self.verticalLayout_19.addWidget(self.admin_mgt_package_screens_2)
 
-        self.admin_screens.addWidget(self.add_package)
+        self.admin_screens.addWidget(self.mgt_staff)
 
         self.verticalLayout_10.addWidget(self.admin_screens)
 
@@ -1813,9 +1817,9 @@ class Ui_MainWindow(object):
         self.view_s_update_2.clicked.connect(self.view_s_upload_g_certificate.clear)
         self.view_s_update_2.clicked.connect(self.view_s_upload_p_certificate.clear)
 
-        self.admin_screens.setCurrentIndex(1)
-        self.admin_mgt_package_screens.setCurrentIndex(1)
-        self.admin_mgt_package_screens_2.setCurrentIndex(1)
+        self.admin_screens.setCurrentIndex(0)
+        self.admin_mgt_package_screens.setCurrentIndex(0)
+        self.admin_mgt_package_screens_2.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1862,8 +1866,8 @@ class Ui_MainWindow(object):
         self.btn_browser_img.setText(QCoreApplication.translate("MainWindow", u"Browser Image", None))
         self.btn_clear.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
         self.btn_save_package.setText(QCoreApplication.translate("MainWindow", u"Save", None))
-        self.btn_view_package_2.setText(QCoreApplication.translate("MainWindow", u"View Packages", None))
-        self.btn_add_package_2.setText(QCoreApplication.translate("MainWindow", u"Add Packages", None))
+        self.btn_view_staff.setText(QCoreApplication.translate("MainWindow", u"View Staff", None))
+        self.btn_add_staff.setText(QCoreApplication.translate("MainWindow", u"Add Staff", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"Manage Staff / View Staff", None))
         self.staff_member_pp.setText("")
         self.label_21.setText(QCoreApplication.translate("MainWindow", u"Staff id", None))

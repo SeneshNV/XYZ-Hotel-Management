@@ -50,7 +50,6 @@ class MainWindow(QWidget):
             # show logn in screen
             self.login = Login_Screen()
             self.login.show()
-
             # close splash screen
             self.close()
         # increase counter

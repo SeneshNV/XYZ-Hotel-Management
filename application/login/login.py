@@ -44,6 +44,7 @@ class Login_Screen(QWidget):
 
         except mysql.connector.Error as e:
             print("Error connecting to MySQL database:", e)
+            self.show_message("Warning", "Error connecting to Database.")
             return None
 
     def show_message(self, title, message):
@@ -73,7 +74,12 @@ class Login_Screen(QWidget):
                     password = self.ui.txt_u_pass.text()
                     if self.validate_admin_credentials(username, password):
                         print("Credentials are valid")
-                        # Proceed with the login process for administrator account
+
+                        from application.admin_main.admin_main import AdminMainScreen
+                        self.admin_main_screen = AdminMainScreen()
+                        self.admin_main_screen.show()
+                        self.close()
+
                     else:
                         self.show_message("Error", "Invalid username or password for Administrator Account")
                 else:

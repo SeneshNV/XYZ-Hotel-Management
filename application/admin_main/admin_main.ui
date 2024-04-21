@@ -360,6 +360,9 @@ QPushButton:checked {
                <property name="checkable">
                 <bool>true</bool>
                </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
               </widget>
              </item>
              <item>
@@ -622,8 +625,9 @@ QPushButton:checked {
                 <item>
                  <widget class="QStackedWidget" name="admin_screens">
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>0</number>
                   </property>
+                  <widget class="QWidget" name="dashboard"/>
                   <widget class="QWidget" name="mgt_package">
                    <layout class="QVBoxLayout" name="verticalLayout_11">
                     <item>
@@ -692,9 +696,15 @@ QPushButton:checked {
                           <string>View Packages</string>
                          </property>
                          <property name="icon">
-                          <iconset>
-                           <normaloff>:/newPrefix/View boards.svg</normaloff>
-                           <normalon>:/newPrefix/View boards-1.svg</normalon>:/newPrefix/View boards.svg</iconset>
+                          <iconset resource="../../icon.qrc">
+                           <normaloff>:/newPrefix/icon/View boards.svg</normaloff>
+                           <normalon>:/newPrefix/icon/View boards-1.svg</normalon>:/newPrefix/icon/View boards.svg</iconset>
+                         </property>
+                         <property name="checkable">
+                          <bool>true</bool>
+                         </property>
+                         <property name="checked">
+                          <bool>true</bool>
                          </property>
                         </widget>
                        </item>
@@ -704,9 +714,12 @@ QPushButton:checked {
                           <string>Add Packages</string>
                          </property>
                          <property name="icon">
-                          <iconset>
-                           <normaloff>:/newPrefix/Add.svg</normaloff>
-                           <normalon>:/newPrefix/Add_W.svg</normalon>:/newPrefix/Add.svg</iconset>
+                          <iconset resource="../../icon.qrc">
+                           <normaloff>:/newPrefix/icon/Add.svg</normaloff>
+                           <normalon>:/newPrefix/icon/Add_W.svg</normalon>:/newPrefix/icon/Add.svg</iconset>
+                         </property>
+                         <property name="checkable">
+                          <bool>true</bool>
                          </property>
                         </widget>
                        </item>
@@ -729,9 +742,9 @@ QPushButton:checked {
                     <item>
                      <widget class="QStackedWidget" name="admin_mgt_package_screens">
                       <property name="currentIndex">
-                       <number>1</number>
+                       <number>0</number>
                       </property>
-                      <widget class="QWidget" name="page_3">
+                      <widget class="QWidget" name="view_package">
                        <layout class="QVBoxLayout" name="verticalLayout_12">
                         <item>
                          <widget class="QLabel" name="label_9">
@@ -754,8 +767,8 @@ color: rgb(174, 84, 79);</string>
                             <rect>
                              <x>0</x>
                              <y>0</y>
-                             <width>63</width>
-                             <height>18</height>
+                             <width>354</width>
+                             <height>422</height>
                             </rect>
                            </property>
                            <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -778,7 +791,7 @@ color: rgb(174, 84, 79);</string>
                         </item>
                        </layout>
                       </widget>
-                      <widget class="QWidget" name="page_4">
+                      <widget class="QWidget" name="add_package">
                        <layout class="QVBoxLayout" name="verticalLayout_17">
                         <item>
                          <widget class="QLabel" name="label_11">
@@ -813,7 +826,7 @@ color: rgb(174, 84, 79);</string>
                             <rect>
                              <x>0</x>
                              <y>0</y>
-                             <width>335</width>
+                             <width>337</width>
                              <height>783</height>
                             </rect>
                            </property>
@@ -1251,7 +1264,7 @@ QPushButton:checked {
                     </item>
                    </layout>
                   </widget>
-                  <widget class="QWidget" name="add_package">
+                  <widget class="QWidget" name="mgt_staff">
                    <layout class="QVBoxLayout" name="verticalLayout_19">
                     <item>
                      <widget class="QFrame" name="frame_15">
@@ -1268,7 +1281,7 @@ QPushButton:checked {
                        </size>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">#frame_5{
+                       <string notr="true">#frame_15{
 background: #FFF3F2;
 }
 
@@ -1314,26 +1327,35 @@ QPushButton:checked {
                       </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_7">
                        <item>
-                        <widget class="QPushButton" name="btn_view_package_2">
+                        <widget class="QPushButton" name="btn_view_staff">
                          <property name="text">
-                          <string>View Packages</string>
+                          <string>View Staff</string>
                          </property>
                          <property name="icon">
                           <iconset resource="../../icon.qrc">
                            <normaloff>:/newPrefix/icon/View boards.svg</normaloff>
                            <normalon>:/newPrefix/icon/View boards-1.svg</normalon>:/newPrefix/icon/View boards.svg</iconset>
                          </property>
+                         <property name="checkable">
+                          <bool>true</bool>
+                         </property>
+                         <property name="checked">
+                          <bool>true</bool>
+                         </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="btn_add_package_2">
+                        <widget class="QPushButton" name="btn_add_staff">
                          <property name="text">
-                          <string>Add Packages</string>
+                          <string>Add Staff</string>
                          </property>
                          <property name="icon">
                           <iconset resource="../../icon.qrc">
                            <normaloff>:/newPrefix/icon/Add.svg</normaloff>
                            <normalon>:/newPrefix/icon/Add_W.svg</normalon>:/newPrefix/icon/Add.svg</iconset>
+                         </property>
+                         <property name="checkable">
+                          <bool>true</bool>
                          </property>
                         </widget>
                        </item>
@@ -1356,9 +1378,9 @@ QPushButton:checked {
                     <item>
                      <widget class="QStackedWidget" name="admin_mgt_package_screens_2">
                       <property name="currentIndex">
-                       <number>1</number>
+                       <number>0</number>
                       </property>
-                      <widget class="QWidget" name="page_5">
+                      <widget class="QWidget" name="view_staff">
                        <layout class="QVBoxLayout" name="verticalLayout_14">
                         <item>
                          <widget class="QLabel" name="label_10">
@@ -1382,7 +1404,7 @@ color: rgb(174, 84, 79);</string>
                              <x>0</x>
                              <y>0</y>
                              <width>424</width>
-                             <height>89</height>
+                             <height>405</height>
                             </rect>
                            </property>
                            <layout class="QHBoxLayout" name="horizontalLayout_9">
@@ -1403,7 +1425,7 @@ color: rgb(174, 84, 79);</string>
                                  <x>0</x>
                                  <y>0</y>
                                  <width>198</width>
-                                 <height>69</height>
+                                 <height>385</height>
                                 </rect>
                                </property>
                               </widget>
@@ -1894,7 +1916,7 @@ QPushButton:checked {
                         </item>
                        </layout>
                       </widget>
-                      <widget class="QWidget" name="page_6">
+                      <widget class="QWidget" name="add_staff">
                        <layout class="QVBoxLayout" name="verticalLayout_20">
                         <item>
                          <widget class="QLabel" name="label_19">
