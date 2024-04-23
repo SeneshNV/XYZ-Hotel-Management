@@ -194,6 +194,18 @@ System</string>
          </item>
          <item>
           <widget class="QProgressBar" name="progressBar">
+           <property name="styleSheet">
+            <string notr="true">QProgressBar{
+	background: rgb(221, 221, 221);
+	border-style: none;
+	border-radius: 5px;	
+}
+
+QProgressBar::chunk{
+	border-radius:5px;
+	background-color:rgb(174, 84, 79);
+}</string>
+           </property>
            <property name="value">
             <number>24</number>
            </property>

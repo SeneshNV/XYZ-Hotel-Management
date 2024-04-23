@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'splash_screen_uiDeYtbR.ui'
+## Form generated from reading UI file 'splash_screen_uieEgaBo.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -41,6 +41,7 @@ class Ui_splash_screen(object):
         self.label_5 = QLabel(self.frame)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setMinimumSize(QSize(250, 338))
+        self.label_5.setLineWidth(0)
 
         self.verticalLayout_3.addWidget(self.label_5)
 
@@ -112,6 +113,16 @@ class Ui_splash_screen(object):
 
         self.progressBar = QProgressBar(self.frame_5)
         self.progressBar.setObjectName(u"progressBar")
+        self.progressBar.setStyleSheet(u"QProgressBar{\n"
+"	background: rgb(221, 221, 221);\n"
+"	border-style: none;\n"
+"	border-radius: 5px;	\n"
+"}\n"
+"\n"
+"QProgressBar::chunk{\n"
+"	border-radius:5px;\n"
+"	background-color:rgb(174, 84, 79);\n"
+"}")
         self.progressBar.setValue(24)
         self.progressBar.setTextVisible(False)
 

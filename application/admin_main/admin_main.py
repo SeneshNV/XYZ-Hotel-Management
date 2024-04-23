@@ -1,3 +1,4 @@
+from PySide6 import QtWidgets
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
 from application.admin_main.ui_admin_main import Ui_MainWindow
 
@@ -15,10 +16,9 @@ class AdminMainScreen(QMainWindow):
         #button
         self.ui.btn_mgt_package.clicked.connect(self.show_mgt_package)
         self.ui.btn_mgt_staff.clicked.connect(self.show_mgt_staff)
-        # self.ui.btn_view_package.clicked.connect(self.show_view_package)
-        # self.ui.add_package.clicked.connect(self.show_add_package)
-        # self.ui.btn_add_staff.clicked.connect(self.show_add_staff)
-        # self.ui.btn_view_staff.clicked.connect(self.show_view_staff)
+
+        #loading
+        self.show_view_staff()
 
     def update_navigation_styles(self, selected_button):
         # Reset styles for all buttons
@@ -75,6 +75,46 @@ class AdminMainScreen(QMainWindow):
         self.ui.admin_mgt_package_screens_2.setCurrentWidget(self.ui.add_staff)
         self.update_navigation_styles_staff(self.ui.btn_add_staff)
 
+        # Clear the current contents of the frame
+        frame_layout = self.ui.frame_19.layout()
+        if frame_layout:
+            while frame_layout.count() > 0:
+                widget = frame_layout.takeAt(0).widget()
+                if widget:
+                    widget.deleteLater()
+
+        # Create layout for frame_19 if it doesn't exist
+        frame_layout = self.ui.frame_19.layout()
+        if frame_layout is None:
+            frame_layout = QtWidgets.QVBoxLayout()
+            self.ui.frame_19.setLayout(frame_layout)
+
+        # Instantiate and add the AddStaff widget to the frame
+        from application.staff.add_staff_section import AddStaff
+        self.add_staff = AddStaff()
+        frame_layout.addWidget(self.add_staff)
+        self.add_staff.setVisible(True)
+
     def show_view_staff(self):
         self.ui.admin_mgt_package_screens_2.setCurrentWidget(self.ui.view_staff)
         self.update_navigation_styles_staff(self.ui.btn_view_staff)
+
+        # Clear the current contents of the frame
+        frame_layout = self.ui.frame_18.layout()
+        if frame_layout:
+            while frame_layout.count() > 0:
+                widget = frame_layout.takeAt(0).widget()
+                if widget:
+                    widget.deleteLater()
+
+        # Create layout for frame_19 if it doesn't exist
+        frame_layout = self.ui.frame_18.layout()
+        if frame_layout is None:
+            frame_layout = QtWidgets.QVBoxLayout()
+            self.ui.frame_18.setLayout(frame_layout)
+
+        # Instantiate and add the AddStaff widget to the frame
+        from application.staff.view_staff_section import ViewStaff
+        self.view_staff = ViewStaff()
+        frame_layout.addWidget(self.view_staff)
+        self.view_staff.setVisible(True)
