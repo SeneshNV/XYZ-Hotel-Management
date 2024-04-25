@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>335</width>
-    <height>400</height>
+    <width>663</width>
+    <height>602</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -20,8 +20,23 @@
    <string>view_staff</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QScrollArea" name="display_mgt_package_2">
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
@@ -30,16 +45,31 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>424</width>
-        <height>363</height>
+        <width>663</width>
+        <height>602</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
         <widget class="QScrollArea" name="staff_member_list">
          <property name="minimumSize">
           <size>
-           <width>200</width>
+           <width>300</width>
            <height>0</height>
           </size>
          </property>
@@ -51,8 +81,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>198</width>
-            <height>343</height>
+            <width>300</width>
+            <height>602</height>
            </rect>
           </property>
          </widget>
@@ -73,6 +103,12 @@
 background-color: rgb(199, 156, 153);
 </string>
          </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
          <property name="widgetResizable">
           <bool>true</bool>
          </property>
@@ -81,11 +117,26 @@ background-color: rgb(199, 156, 153);
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>302</width>
-            <height>537</height>
+            <width>363</width>
+            <height>602</height>
            </rect>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="styleSheet">
+           <string notr="true">border-radius:10px;</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
            <item>
             <widget class="QFrame" name="frame_18">
              <property name="frameShape">
@@ -94,7 +145,22 @@ background-color: rgb(199, 156, 153);
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item>
                <spacer name="horizontalSpacer_7">
                 <property name="orientation">
@@ -112,8 +178,8 @@ background-color: rgb(199, 156, 153);
                <widget class="QLabel" name="staff_member_pp">
                 <property name="minimumSize">
                  <size>
-                  <width>80</width>
-                  <height>80</height>
+                  <width>120</width>
+                  <height>120</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -137,11 +203,63 @@ background-color: rgb(199, 156, 153);
                 </property>
                </spacer>
               </item>
+              <item>
+               <widget class="QPushButton" name="pp_edit">
+                <property name="minimumSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="toolTip">
+                 <string>Edit</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../../icon.qrc">
+                  <normaloff>:/newPrefix/icon/edit.svg</normaloff>:/newPrefix/icon/edit.svg</iconset>
+                </property>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
            <item>
-            <layout class="QFormLayout" name="formLayout_2">
+            <layout class="QGridLayout" name="gridLayout">
              <item row="0" column="0">
               <widget class="QLabel" name="label_21">
                <property name="styleSheet">
@@ -165,6 +283,9 @@ color: rgb(255, 255, 255);</string>
     padding: 8px 16px; 
 	text-align: left;
 }</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
                </property>
                <property name="placeholderText">
                 <string>S001</string>
@@ -195,8 +316,67 @@ color: rgb(255, 255, 255);</string>
 	text-align: left;
 }</string>
                </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
                <property name="placeholderText">
                 <string>Staff Member Name</string>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="name_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string>Edit</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../icon.qrc">
+                 <normaloff>:/newPrefix/icon/edit.svg</normaloff>:/newPrefix/icon/edit.svg</iconset>
                </property>
               </widget>
              </item>
@@ -211,6 +391,60 @@ color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="gender_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string>Edit</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../icon.qrc">
+                 <normaloff>:/newPrefix/icon/edit.svg</normaloff>:/newPrefix/icon/edit.svg</iconset>
+               </property>
+              </widget>
+             </item>
              <item row="3" column="0">
               <widget class="QLabel" name="label_20">
                <property name="styleSheet">
@@ -219,6 +453,60 @@ color: rgb(255, 255, 255);</string>
                </property>
                <property name="text">
                 <string>Department</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="dep_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string>Edit</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../icon.qrc">
+                 <normaloff>:/newPrefix/icon/edit.svg</normaloff>:/newPrefix/icon/edit.svg</iconset>
                </property>
               </widget>
              </item>
@@ -233,7 +521,7 @@ color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="1">
+             <item row="4" column="1" rowspan="2">
               <widget class="QTextEdit" name="view_s_address">
                <property name="maximumSize">
                 <size>
@@ -252,12 +540,69 @@ color: rgb(255, 255, 255);</string>
 	text-align: left;
 }</string>
                </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
                <property name="placeholderText">
                 <string>Staff Member's Address</string>
                </property>
               </widget>
              </item>
-             <item row="5" column="0">
+             <item row="5" column="2">
+              <widget class="QPushButton" name="address_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string>Edit</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../icon.qrc">
+                 <normaloff>:/newPrefix/icon/edit.svg</normaloff>:/newPrefix/icon/edit.svg</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
               <widget class="QLabel" name="label_25">
                <property name="styleSheet">
                 <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
@@ -268,7 +613,7 @@ color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="5" column="1">
+             <item row="6" column="1">
               <widget class="QLineEdit" name="view_s_tel">
                <property name="styleSheet">
                 <string notr="true">QLineEdit{
@@ -281,12 +626,67 @@ color: rgb(255, 255, 255);</string>
 	text-align: left;
 }</string>
                </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
                <property name="placeholderText">
                 <string>07X XX XX XXX</string>
                </property>
               </widget>
              </item>
-             <item row="6" column="0">
+             <item row="6" column="2">
+              <widget class="QPushButton" name="tel_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string>Edit</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../icon.qrc">
+                 <normaloff>:/newPrefix/icon/edit.svg</normaloff>:/newPrefix/icon/edit.svg</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
               <widget class="QLabel" name="label_26">
                <property name="styleSheet">
                 <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
@@ -297,7 +697,7 @@ color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="6" column="1">
+             <item row="7" column="1">
               <widget class="QLineEdit" name="view_s_email">
                <property name="styleSheet">
                 <string notr="true">QLineEdit{
@@ -310,12 +710,68 @@ color: rgb(255, 255, 255);</string>
 	text-align: left;
 }</string>
                </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
                <property name="placeholderText">
                 <string>emample : xyz@gmail.com</string>
                </property>
               </widget>
              </item>
-             <item row="7" column="0">
+             <item row="7" column="2">
+              <widget class="QPushButton" name="email_edit">
+               <property name="minimumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="toolTip">
+                <string>Edit</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../../icon.qrc">
+                 <normaloff>:/newPrefix/icon/edit.svg</normaloff>:/newPrefix/icon/edit.svg</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
               <widget class="QLabel" name="label_27">
                <property name="styleSheet">
                 <string notr="true">font: 700 10pt &quot;SF Pro Display&quot;;
@@ -326,7 +782,7 @@ color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="7" column="1">
+             <item row="8" column="1">
               <widget class="QLineEdit" name="view_s_salary">
                <property name="styleSheet">
                 <string notr="true">QLineEdit{
@@ -339,15 +795,18 @@ color: rgb(255, 255, 255);</string>
 	text-align: left;
 }</string>
                </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
                <property name="placeholderText">
                 <string>Rs. 45000.00</string>
                </property>
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLineEdit" name="view_s_gender">
+              <widget class="QComboBox" name="view_s_gender">
                <property name="styleSheet">
-                <string notr="true">QLineEdit{
+                <string notr="true">QComboBox{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
     color: #4C4C6C;
@@ -357,15 +816,22 @@ color: rgb(255, 255, 255);</string>
 	text-align: left;
 }</string>
                </property>
-               <property name="placeholderText">
-                <string>example : Male</string>
-               </property>
+               <item>
+                <property name="text">
+                 <string>Male</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Female</string>
+                </property>
+               </item>
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QLineEdit" name="view_s_department">
+              <widget class="QComboBox" name="view_s_department">
                <property name="styleSheet">
-                <string notr="true">QLineEdit{
+                <string notr="true">QComboBox{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
     color: #4C4C6C;
@@ -375,9 +841,26 @@ color: rgb(255, 255, 255);</string>
 	text-align: left;
 }</string>
                </property>
-               <property name="placeholderText">
-                <string>example : Maintenance</string>
-               </property>
+               <item>
+                <property name="text">
+                 <string>Maintenance</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Kitchen</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Housekeeping</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Banquets</string>
+                </property>
+               </item>
               </widget>
              </item>
             </layout>
@@ -417,6 +900,9 @@ color: rgb(255, 255, 255);</string>
                   <width>120</width>
                   <height>0</height>
                  </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">/* Default button style */
@@ -479,6 +965,9 @@ QPushButton:checked {
                   <width>120</width>
                   <height>0</height>
                  </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">/* Default button style */
@@ -543,6 +1032,8 @@ QPushButton:checked {
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../icon.qrc"/>
+ </resources>
  <connections/>
 </ui>

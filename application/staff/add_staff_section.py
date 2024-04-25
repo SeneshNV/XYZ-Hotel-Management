@@ -36,6 +36,7 @@ class AddStaff(QWidget):
         self.ui.s_upload_p_certificate.clicked.connect(self.upload_staff_P_Certificate)
 
         self.ui.upload_s_department.currentTextChanged.connect(self.update_salary)
+        self.s_salary = 0
 
     def show_message(self, title, message):
         QMessageBox.warning(self, title, message)
@@ -187,9 +188,12 @@ class AddStaff(QWidget):
 
         # Calculate the salary based on the selected department
         salary = self.calculate_salary(department)
+        self.s_salary = salary
 
         # Update the salary field in the UI
         self.ui.upload_s_salary_2.setText(str(salary))
+
+        return salary
 
     def calculate_salary(self, department):
         # Dictionary to map department to salary
@@ -226,14 +230,17 @@ class AddStaff(QWidget):
             s_address = self.ui.upload_s_address_2.toPlainText()
             s_contact_no = self.ui.upload_s_tel_2.text()
             s_email = self.ui.upload_s_email_2.text()
-            s_salary = self.ui.upload_s_salary_2.text()
+            # s_salary = self.ui.upload_s_salary_2.text()
+            s_salary = int(self.calculate_salary(s_department).replace('Rs.', '').replace(',', ''))
+            print(s_salary)
+
             s_g_certificate = self.sgc_image_name
             s_p_certificate = self.spc_image_name
 
             # Execute the query with the values
             cursor.execute(insert_query, (
-            staff_id, s_name, s_photo, s_gender, s_department, s_address, s_contact_no, s_email, s_salary, s_g_certificate,
-            s_p_certificate))
+                staff_id, s_name, s_photo, s_gender, s_department, s_address, s_contact_no, s_email, s_salary,
+                s_g_certificate, s_p_certificate))
 
             # Commit the transaction
             self.connection.commit()
@@ -265,6 +272,9 @@ class AddStaff(QWidget):
         if not s_name.strip():
             self.show_message("Validation Error", "Please enter a name.")
             return False
+        elif len(s_name) > 30:
+            self.show_message("Validation Error", "Name must be at most 30 characters long.")
+            return False
         elif s_name.isdigit():  # Check if name contains only digits
             self.show_message("Validation Error", "Name cannot contain only numbers.")
             return False
@@ -276,6 +286,9 @@ class AddStaff(QWidget):
             return False
         elif not s_address.strip():
             self.show_message("Validation Error", "Please enter an address.")
+            return False
+        elif len(s_address) > 250:
+            self.show_message("Validation Error", "Address must be at most 250 characters long.")
             return False
         elif not s_contact_no.strip():
             self.show_message("Validation Error", "Please enter a Contact Number.")

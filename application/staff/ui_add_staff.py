@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'add_staffunFqTe.ui'
+## Form generated from reading UI file 'add_staffsomSbJ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -26,17 +26,20 @@ class Ui_add_staff_form(object):
             add_staff_form.setObjectName(u"add_staff_form")
         add_staff_form.resize(618, 566)
         add_staff_form.setMinimumSize(QSize(335, 400))
+        add_staff_form.setStyleSheet(u"border:none;")
         self.horizontalLayout = QHBoxLayout(add_staff_form)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.scrollArea_3 = QScrollArea(add_staff_form)
         self.scrollArea_3.setObjectName(u"scrollArea_3")
         self.scrollArea_3.setMinimumSize(QSize(200, 0))
         self.scrollArea_3.setStyleSheet(u"")
+        self.scrollArea_3.setLineWidth(0)
         self.scrollArea_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_8 = QWidget()
         self.scrollAreaWidgetContents_8.setObjectName(u"scrollAreaWidgetContents_8")
-        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, 0, 692, 529))
+        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, 0, 698, 531))
         self.horizontalLayout_12 = QHBoxLayout(self.scrollAreaWidgetContents_8)
+        self.horizontalLayout_12.setSpacing(20)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
         self.frame_19 = QFrame(self.scrollAreaWidgetContents_8)
         self.frame_19.setObjectName(u"frame_19")
@@ -562,6 +565,13 @@ class Ui_add_staff_form(object):
 
 
         self.retranslateUi(add_staff_form)
+        self.view_s_update_2.clicked.connect(self.upload_s_name_2.clear)
+        self.view_s_update_2.clicked.connect(self.upload_s_address_2.clear)
+        self.view_s_update_2.clicked.connect(self.upload_s_tel_2.clear)
+        self.view_s_update_2.clicked.connect(self.upload_s_email_2.clear)
+        self.view_s_update_2.clicked.connect(self.upload_staff_member_pp_2.clear)
+        self.view_s_update_2.clicked.connect(self.view_s_upload_g_certificate.clear)
+        self.view_s_update_2.clicked.connect(self.view_s_upload_p_certificate.clear)
 
         QMetaObject.connectSlotsByName(add_staff_form)
     # setupUi
