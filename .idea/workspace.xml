@@ -5,32 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/package/add_package.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0015.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0013.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0015.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0014.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0015.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0018.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/package/add_package_section.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/package/image_repo/P001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/package/image_repo/P003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/package/image_repo/P005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/package/view_package.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/package/view_packages_section.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0023.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin_main/admin_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/admin_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin_main/admin_main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/admin_main.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin_main/ui_admin_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/ui_admin_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/add_staff.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/add_staff.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/add_package.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/add_package.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/ui_add_package.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/ui_add_package.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/staff/add_staff_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/add_staff_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/ui_add_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/ui_add_staff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/ui_view_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/ui_view_staff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/view_staff.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/view_staff.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/view_staff_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/view_staff_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/icon.qrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon_rc.py" beforeDir="false" afterPath="$PROJECT_DIR$/icon_rc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/staff/image_repo/PC_S0010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/staff/image_repo/PC_S0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/staff/image_repo/PC_S0012.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +54,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/XYZ Hotel Management",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/XYZ Hotel Management&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

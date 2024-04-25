@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'admin_mainJaIIvm.ui'
+## Form generated from reading UI file 'admin_mainoMDyYZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -343,7 +343,9 @@ class Ui_MainWindow(object):
         self.mgt_package = QWidget()
         self.mgt_package.setObjectName(u"mgt_package")
         self.verticalLayout_11 = QVBoxLayout(self.mgt_package)
+        self.verticalLayout_11.setSpacing(0)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.frame_5 = QFrame(self.mgt_package)
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setMinimumSize(QSize(0, 50))
@@ -418,34 +420,29 @@ class Ui_MainWindow(object):
         self.view_package.setObjectName(u"view_package")
         self.verticalLayout_12 = QVBoxLayout(self.view_package)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.verticalLayout_12.setContentsMargins(-1, -1, -1, 0)
         self.label_9 = QLabel(self.view_package)
         self.label_9.setObjectName(u"label_9")
+        self.label_9.setMinimumSize(QSize(0, 20))
+        self.label_9.setMaximumSize(QSize(16777215, 20))
         self.label_9.setStyleSheet(u"font: 12pt \"SF Pro Display\";\n"
 "color: rgb(174, 84, 79);")
 
         self.verticalLayout_12.addWidget(self.label_9)
 
-        self.display_mgt_package = QScrollArea(self.view_package)
-        self.display_mgt_package.setObjectName(u"display_mgt_package")
-        self.display_mgt_package.setWidgetResizable(True)
-        self.scrollAreaWidgetContents_2 = QWidget()
-        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 351, 419))
-        self.verticalLayout_13 = QVBoxLayout(self.scrollAreaWidgetContents_2)
-        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.verticalSpacer_3 = QSpacerItem(20, 401, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.frame_17 = QFrame(self.view_package)
+        self.frame_17.setObjectName(u"frame_17")
+        self.frame_17.setFrameShape(QFrame.StyledPanel)
+        self.frame_17.setFrameShadow(QFrame.Raised)
 
-        self.verticalLayout_13.addItem(self.verticalSpacer_3)
-
-        self.display_mgt_package.setWidget(self.scrollAreaWidgetContents_2)
-
-        self.verticalLayout_12.addWidget(self.display_mgt_package)
+        self.verticalLayout_12.addWidget(self.frame_17)
 
         self.admin_mgt_package_screens.addWidget(self.view_package)
         self.add_package = QWidget()
         self.add_package.setObjectName(u"add_package")
         self.verticalLayout_15 = QVBoxLayout(self.add_package)
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.verticalLayout_15.setContentsMargins(9, -1, -1, 0)
         self.label_11 = QLabel(self.add_package)
         self.label_11.setObjectName(u"label_11")
         self.label_11.setMinimumSize(QSize(0, 20))
@@ -455,15 +452,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_15.addWidget(self.label_11)
 
-        self.add_package_area = QScrollArea(self.add_package)
-        self.add_package_area.setObjectName(u"add_package_area")
-        self.add_package_area.setWidgetResizable(True)
-        self.scrollAreaWidgetContents_3 = QWidget()
-        self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
-        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 351, 419))
-        self.add_package_area.setWidget(self.scrollAreaWidgetContents_3)
+        self.frame_16 = QFrame(self.add_package)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setFrameShape(QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.frame_16.setLineWidth(0)
 
-        self.verticalLayout_15.addWidget(self.add_package_area)
+        self.verticalLayout_15.addWidget(self.frame_16)
 
         self.admin_mgt_package_screens.addWidget(self.add_package)
 
@@ -473,7 +468,9 @@ class Ui_MainWindow(object):
         self.mgt_staff = QWidget()
         self.mgt_staff.setObjectName(u"mgt_staff")
         self.verticalLayout_19 = QVBoxLayout(self.mgt_staff)
+        self.verticalLayout_19.setSpacing(0)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.verticalLayout_19.setContentsMargins(0, 0, 0, 0)
         self.frame_15 = QFrame(self.mgt_staff)
         self.frame_15.setObjectName(u"frame_15")
         self.frame_15.setMinimumSize(QSize(0, 50))
@@ -545,6 +542,7 @@ class Ui_MainWindow(object):
         self.view_staff.setObjectName(u"view_staff")
         self.verticalLayout_14 = QVBoxLayout(self.view_staff)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.verticalLayout_14.setContentsMargins(-1, -1, -1, 0)
         self.label_10 = QLabel(self.view_staff)
         self.label_10.setObjectName(u"label_10")
         self.label_10.setMinimumSize(QSize(0, 20))
@@ -566,6 +564,7 @@ class Ui_MainWindow(object):
         self.add_staff.setObjectName(u"add_staff")
         self.verticalLayout = QVBoxLayout(self.add_staff)
         self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(-1, -1, -1, 0)
         self.label_19 = QLabel(self.add_staff)
         self.label_19.setObjectName(u"label_19")
         self.label_19.setMinimumSize(QSize(0, 20))

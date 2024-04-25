@@ -333,3 +333,7 @@ class AddStaff(QWidget):
         self.next_id = self.get_next_id()
         self.staff_id = "S00" + str(self.next_id)
         self.ui.upload_s_id_2.setText("S00" + str(self.next_id))
+
+        self.spp_image_name = ""  # Just the image name for validation
+        self.sgc_image_name = ""  # Just the image name for validation
+        self.spc_image_name = ""

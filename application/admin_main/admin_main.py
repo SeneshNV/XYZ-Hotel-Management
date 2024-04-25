@@ -19,6 +19,7 @@ class AdminMainScreen(QMainWindow):
 
         #loading
         self.show_view_staff()
+        self.show_view_package()
 
     def update_navigation_styles(self, selected_button):
         # Reset styles for all buttons
@@ -67,9 +68,49 @@ class AdminMainScreen(QMainWindow):
         self.ui.admin_mgt_package_screens.setCurrentWidget(self.ui.view_package)
         self.update_navigation_styles_package(self.ui.btn_view_package)
 
+        # Clear the current contents of the frame
+        frame_layout = self.ui.frame_17.layout()
+        if frame_layout:
+            while frame_layout.count() > 0:
+                widget = frame_layout.takeAt(0).widget()
+                if widget:
+                    widget.deleteLater()
+
+        # Create layout for frame_19 if it doesn't exist
+        frame_layout = self.ui.frame_17.layout()
+        if frame_layout is None:
+            frame_layout = QtWidgets.QVBoxLayout()
+            self.ui.frame_17.setLayout(frame_layout)
+
+        # Instantiate and add the AddStaff widget to the frame
+        from application.package.view_packages_section import ViewPackage
+        self.view_pack = ViewPackage()
+        frame_layout.addWidget(self.view_pack)
+        # self.view_pack.setVisible(True)
+
     def show_add_package(self):
         self.ui.admin_mgt_package_screens.setCurrentWidget(self.ui.add_package)
         self.update_navigation_styles_package(self.ui.btn_add_package)
+
+        # Clear the current contents of the frame
+        frame_layout = self.ui.frame_16.layout()
+        if frame_layout:
+            while frame_layout.count() > 0:
+                widget = frame_layout.takeAt(0).widget()
+                if widget:
+                    widget.deleteLater()
+
+        # Create layout for frame_19 if it doesn't exist
+        frame_layout = self.ui.frame_16.layout()
+        if frame_layout is None:
+            frame_layout = QtWidgets.QVBoxLayout()
+            self.ui.frame_16.setLayout(frame_layout)
+
+        # Instantiate and add the AddStaff widget to the frame
+        from application.package.add_package_section import AddPackage
+        self.add_pack = AddPackage()
+        frame_layout.addWidget(self.add_pack)
+        # self.add_pack.setVisible(True)
 
     def show_add_staff(self):
         self.ui.admin_mgt_package_screens_2.setCurrentWidget(self.ui.add_staff)
@@ -93,7 +134,7 @@ class AdminMainScreen(QMainWindow):
         from application.staff.add_staff_section import AddStaff
         self.add_staff = AddStaff()
         frame_layout.addWidget(self.add_staff)
-        self.add_staff.setVisible(True)
+        # self.add_staff.setVisible(True)
 
     def show_view_staff(self):
         self.ui.admin_mgt_package_screens_2.setCurrentWidget(self.ui.view_staff)
@@ -117,4 +158,4 @@ class AdminMainScreen(QMainWindow):
         from application.staff.view_staff_section import ViewStaff
         self.view_staff = ViewStaff()
         frame_layout.addWidget(self.view_staff)
-        self.view_staff.setVisible(True)
+        # self.view_staff.setVisible(True)

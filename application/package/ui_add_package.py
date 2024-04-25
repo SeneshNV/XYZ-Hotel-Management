@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'add_packagehpiYWv.ui'
+## Form generated from reading UI file 'add_packageMxywKw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -24,28 +24,37 @@ class Ui_add_package_form(object):
     def setupUi(self, add_package_form):
         if not add_package_form.objectName():
             add_package_form.setObjectName(u"add_package_form")
-        add_package_form.resize(335, 400)
+        add_package_form.resize(335, 613)
         add_package_form.setMinimumSize(QSize(335, 400))
+        add_package_form.setMaximumSize(QSize(16777215, 16777215))
+        add_package_form.setStyleSheet(u"border:none;")
         self.horizontalLayout = QHBoxLayout(add_package_form)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.display_mgt_package_3 = QScrollArea(add_package_form)
         self.display_mgt_package_3.setObjectName(u"display_mgt_package_3")
-        self.display_mgt_package_3.setMinimumSize(QSize(0, 424))
-        self.display_mgt_package_3.setMaximumSize(QSize(700, 16777215))
+        self.display_mgt_package_3.setMinimumSize(QSize(200, 0))
+        self.display_mgt_package_3.setMaximumSize(QSize(16777215, 16777215))
+        self.display_mgt_package_3.setLineWidth(0)
         self.display_mgt_package_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_4 = QWidget()
         self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
-        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 324, 783))
-        self.verticalLayout_16 = QVBoxLayout(self.scrollAreaWidgetContents_4)
-        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 648, 578))
+        self.horizontalLayout_2 = QHBoxLayout(self.scrollAreaWidgetContents_4)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.frame = QFrame(self.scrollAreaWidgetContents_4)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout = QVBoxLayout(self.frame)
+        self.verticalLayout.setObjectName(u"verticalLayout")
         self.formLayout = QFormLayout()
         self.formLayout.setObjectName(u"formLayout")
-        self.label_12 = QLabel(self.scrollAreaWidgetContents_4)
+        self.label_12 = QLabel(self.frame)
         self.label_12.setObjectName(u"label_12")
 
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.label_12)
 
-        self.txt_p_id = QLineEdit(self.scrollAreaWidgetContents_4)
+        self.txt_p_id = QLineEdit(self.frame)
         self.txt_p_id.setObjectName(u"txt_p_id")
         self.txt_p_id.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
@@ -59,12 +68,12 @@ class Ui_add_package_form(object):
 
         self.formLayout.setWidget(0, QFormLayout.FieldRole, self.txt_p_id)
 
-        self.label_13 = QLabel(self.scrollAreaWidgetContents_4)
+        self.label_13 = QLabel(self.frame)
         self.label_13.setObjectName(u"label_13")
 
         self.formLayout.setWidget(1, QFormLayout.LabelRole, self.label_13)
 
-        self.txt_p_title = QLineEdit(self.scrollAreaWidgetContents_4)
+        self.txt_p_title = QLineEdit(self.frame)
         self.txt_p_title.setObjectName(u"txt_p_title")
         self.txt_p_title.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
@@ -78,12 +87,12 @@ class Ui_add_package_form(object):
 
         self.formLayout.setWidget(1, QFormLayout.FieldRole, self.txt_p_title)
 
-        self.label_14 = QLabel(self.scrollAreaWidgetContents_4)
+        self.label_14 = QLabel(self.frame)
         self.label_14.setObjectName(u"label_14")
 
         self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_14)
 
-        self.txt_p_description = QTextEdit(self.scrollAreaWidgetContents_4)
+        self.txt_p_description = QTextEdit(self.frame)
         self.txt_p_description.setObjectName(u"txt_p_description")
         self.txt_p_description.setStyleSheet(u"QTextEdit{\n"
 "    background-color: #D9D9D9;\n"
@@ -97,12 +106,12 @@ class Ui_add_package_form(object):
 
         self.formLayout.setWidget(2, QFormLayout.FieldRole, self.txt_p_description)
 
-        self.label_15 = QLabel(self.scrollAreaWidgetContents_4)
+        self.label_15 = QLabel(self.frame)
         self.label_15.setObjectName(u"label_15")
 
         self.formLayout.setWidget(3, QFormLayout.LabelRole, self.label_15)
 
-        self.chk_price = QCheckBox(self.scrollAreaWidgetContents_4)
+        self.chk_price = QCheckBox(self.frame)
         self.chk_price.setObjectName(u"chk_price")
         self.chk_price.setStyleSheet(u"QCheckBox{\n"
 "    background-color: none;\n"
@@ -116,12 +125,12 @@ class Ui_add_package_form(object):
 
         self.formLayout.setWidget(3, QFormLayout.FieldRole, self.chk_price)
 
-        self.label_16 = QLabel(self.scrollAreaWidgetContents_4)
+        self.label_16 = QLabel(self.frame)
         self.label_16.setObjectName(u"label_16")
 
         self.formLayout.setWidget(4, QFormLayout.LabelRole, self.label_16)
 
-        self.cmb_category = QComboBox(self.scrollAreaWidgetContents_4)
+        self.cmb_category = QComboBox(self.frame)
         self.cmb_category.setObjectName(u"cmb_category")
         self.cmb_category.setStyleSheet(u"QComboBox{\n"
 "    background-color: #D9D9D9;\n"
@@ -135,12 +144,12 @@ class Ui_add_package_form(object):
 
         self.formLayout.setWidget(4, QFormLayout.FieldRole, self.cmb_category)
 
-        self.label_17 = QLabel(self.scrollAreaWidgetContents_4)
+        self.label_17 = QLabel(self.frame)
         self.label_17.setObjectName(u"label_17")
 
         self.formLayout.setWidget(5, QFormLayout.LabelRole, self.label_17)
 
-        self.frame_16 = QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_16 = QFrame(self.frame)
         self.frame_16.setObjectName(u"frame_16")
         self.frame_16.setStyleSheet(u"QCheckBox{\n"
 "    background-color: none;\n"
@@ -188,30 +197,29 @@ class Ui_add_package_form(object):
 
         self.formLayout.setWidget(5, QFormLayout.FieldRole, self.frame_16)
 
-        self.label_18 = QLabel(self.scrollAreaWidgetContents_4)
-        self.label_18.setObjectName(u"label_18")
 
-        self.formLayout.setWidget(6, QFormLayout.LabelRole, self.label_18)
+        self.verticalLayout.addLayout(self.formLayout)
 
-        self.lbl_display_img = QLabel(self.scrollAreaWidgetContents_4)
-        self.lbl_display_img.setObjectName(u"lbl_display_img")
-        self.lbl_display_img.setMinimumSize(QSize(0, 150))
-        self.lbl_display_img.setStyleSheet(u"QLabel{\n"
-"    background-color: #D9D9D9;\n"
-"	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
-"    border: none;\n"
-"    border-radius: 10px;\n"
-"    padding: 8px 16px; \n"
-"	text-align: left;\n"
-"}")
 
-        self.formLayout.setWidget(8, QFormLayout.FieldRole, self.lbl_display_img)
+        self.horizontalLayout_2.addWidget(self.frame)
 
-        self.btn_browser_img = QPushButton(self.scrollAreaWidgetContents_4)
-        self.btn_browser_img.setObjectName(u"btn_browser_img")
-        self.btn_browser_img.setMaximumSize(QSize(150, 16777215))
-        self.btn_browser_img.setStyleSheet(u"/* Default button style */\n"
+        self.frame_2 = QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.formLayout_2 = QFormLayout()
+        self.formLayout_2.setObjectName(u"formLayout_2")
+        self.label_25 = QLabel(self.frame_2)
+        self.label_25.setObjectName(u"label_25")
+
+        self.formLayout_2.setWidget(0, QFormLayout.LabelRole, self.label_25)
+
+        self.btn_browser_img_2 = QPushButton(self.frame_2)
+        self.btn_browser_img_2.setObjectName(u"btn_browser_img_2")
+        self.btn_browser_img_2.setMaximumSize(QSize(150, 16777215))
+        self.btn_browser_img_2.setStyleSheet(u"/* Default button style */\n"
 "QPushButton {\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
@@ -240,30 +248,50 @@ class Ui_add_package_form(object):
 " 	color: #FFFFFF;\n"
 "}")
 
-        self.formLayout.setWidget(6, QFormLayout.FieldRole, self.btn_browser_img)
+        self.formLayout_2.setWidget(0, QFormLayout.FieldRole, self.btn_browser_img_2)
+
+        self.lbl_display_img_2 = QLabel(self.frame_2)
+        self.lbl_display_img_2.setObjectName(u"lbl_display_img_2")
+        self.lbl_display_img_2.setMinimumSize(QSize(0, 150))
+        self.lbl_display_img_2.setMaximumSize(QSize(240, 140))
+        self.lbl_display_img_2.setStyleSheet(u"QLabel{\n"
+"    background-color: #D9D9D9;\n"
+"	font: 10pt \"SF Pro Display\";\n"
+"    color: #4C4C6C;\n"
+"    border: none;\n"
+"    border-radius: 10px;\n"
+"    padding: 8px 16px; \n"
+"	text-align: left;\n"
+"}")
+
+        self.formLayout_2.setWidget(1, QFormLayout.FieldRole, self.lbl_display_img_2)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.formLayout_2.setItem(2, QFormLayout.FieldRole, self.verticalSpacer)
 
 
-        self.verticalLayout_16.addLayout(self.formLayout)
+        self.verticalLayout_2.addLayout(self.formLayout_2)
 
-        self.frame_17 = QFrame(self.scrollAreaWidgetContents_4)
-        self.frame_17.setObjectName(u"frame_17")
-        self.frame_17.setFrameShape(QFrame.StyledPanel)
-        self.frame_17.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_8 = QHBoxLayout(self.frame_17)
-        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
-        self.horizontalSpacer_5 = QSpacerItem(23, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.frame_19 = QFrame(self.frame_2)
+        self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setFrameShape(QFrame.StyledPanel)
+        self.frame_19.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_9 = QHBoxLayout(self.frame_19)
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.horizontalSpacer_7 = QSpacerItem(23, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_8.addItem(self.horizontalSpacer_5)
+        self.horizontalLayout_9.addItem(self.horizontalSpacer_7)
 
-        self.btn_clear = QPushButton(self.frame_17)
-        self.btn_clear.setObjectName(u"btn_clear")
+        self.btn_clear_2 = QPushButton(self.frame_19)
+        self.btn_clear_2.setObjectName(u"btn_clear_2")
         sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.btn_clear.sizePolicy().hasHeightForWidth())
-        self.btn_clear.setSizePolicy(sizePolicy)
-        self.btn_clear.setMinimumSize(QSize(120, 0))
-        self.btn_clear.setStyleSheet(u"/* Default button style */\n"
+        sizePolicy.setHeightForWidth(self.btn_clear_2.sizePolicy().hasHeightForWidth())
+        self.btn_clear_2.setSizePolicy(sizePolicy)
+        self.btn_clear_2.setMinimumSize(QSize(120, 0))
+        self.btn_clear_2.setStyleSheet(u"/* Default button style */\n"
 "QPushButton {\n"
 "    background-color: #C79C99;\n"
 "	font: 10pt \"SF Pro Display\";\n"
@@ -292,21 +320,21 @@ class Ui_add_package_form(object):
 " 	color: #FFFFFF;\n"
 "}")
 
-        self.horizontalLayout_8.addWidget(self.btn_clear)
+        self.horizontalLayout_9.addWidget(self.btn_clear_2)
 
-        self.horizontalSpacer_4 = QSpacerItem(2, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer_8 = QSpacerItem(2, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_8.addItem(self.horizontalSpacer_4)
+        self.horizontalLayout_9.addItem(self.horizontalSpacer_8)
 
-        self.btn_save_package = QPushButton(self.frame_17)
-        self.btn_save_package.setObjectName(u"btn_save_package")
+        self.btn_save_package_2 = QPushButton(self.frame_19)
+        self.btn_save_package_2.setObjectName(u"btn_save_package_2")
         sizePolicy1 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.btn_save_package.sizePolicy().hasHeightForWidth())
-        self.btn_save_package.setSizePolicy(sizePolicy1)
-        self.btn_save_package.setMinimumSize(QSize(120, 0))
-        self.btn_save_package.setStyleSheet(u"/* Default button style */\n"
+        sizePolicy1.setHeightForWidth(self.btn_save_package_2.sizePolicy().hasHeightForWidth())
+        self.btn_save_package_2.setSizePolicy(sizePolicy1)
+        self.btn_save_package_2.setMinimumSize(QSize(120, 0))
+        self.btn_save_package_2.setStyleSheet(u"/* Default button style */\n"
 "QPushButton {\n"
 "    background-color: #4C4C6C;\n"
 "	font: 10pt \"SF Pro Display\";\n"
@@ -337,14 +365,17 @@ class Ui_add_package_form(object):
 " 	color: #FFFFFF;\n"
 "}")
 
-        self.horizontalLayout_8.addWidget(self.btn_save_package)
+        self.horizontalLayout_9.addWidget(self.btn_save_package_2)
 
-        self.horizontalSpacer_6 = QSpacerItem(1, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer_9 = QSpacerItem(1, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_8.addItem(self.horizontalSpacer_6)
+        self.horizontalLayout_9.addItem(self.horizontalSpacer_9)
 
 
-        self.verticalLayout_16.addWidget(self.frame_17)
+        self.verticalLayout_2.addWidget(self.frame_19)
+
+
+        self.horizontalLayout_2.addWidget(self.frame_2)
 
         self.display_mgt_package_3.setWidget(self.scrollAreaWidgetContents_4)
 
@@ -374,10 +405,10 @@ class Ui_add_package_form(object):
         self.chk_com_car.setText(QCoreApplication.translate("add_package_form", u"CAR PARKING", None))
         self.chk_com_pool.setText(QCoreApplication.translate("add_package_form", u"INFINITY POOL", None))
         self.chk_com_24hr_service.setText(QCoreApplication.translate("add_package_form", u"24HR SERVICE ", None))
-        self.label_18.setText(QCoreApplication.translate("add_package_form", u"Package Image", None))
-        self.lbl_display_img.setText("")
-        self.btn_browser_img.setText(QCoreApplication.translate("add_package_form", u"Browser Image", None))
-        self.btn_clear.setText(QCoreApplication.translate("add_package_form", u"Clear", None))
-        self.btn_save_package.setText(QCoreApplication.translate("add_package_form", u"Save", None))
+        self.label_25.setText(QCoreApplication.translate("add_package_form", u"Package Image", None))
+        self.btn_browser_img_2.setText(QCoreApplication.translate("add_package_form", u"Browser Image", None))
+        self.lbl_display_img_2.setText("")
+        self.btn_clear_2.setText(QCoreApplication.translate("add_package_form", u"Clear", None))
+        self.btn_save_package_2.setText(QCoreApplication.translate("add_package_form", u"Save", None))
     # retranslateUi
 
