@@ -6,7 +6,7 @@ from PySide6.QtCore import QSize
 from PySide6.QtGui import Qt, QPixmap, QPainter, QPainterPath
 from PySide6.QtWidgets import QWidget, QMessageBox, QVBoxLayout, QLabel, QPushButton, \
     QListWidget, QListWidgetItem, QHBoxLayout, QSpacerItem, QSizePolicy, QLineEdit, QTextEdit, QComboBox, QFileDialog, \
-    QSpinBox
+    QSpinBox, QGridLayout
 from application.package.ui_view_package import Ui_view_package_form
 import mysql.connector
 
@@ -71,6 +71,7 @@ class ViewPackage(QWidget):
                 # Create custom widget to represent the package
                 package_widget = QWidget()
                 package_layout = QHBoxLayout()
+                package_layout.setSpacing(50)
 
                 # Package image
                 package_photo = QLabel()
@@ -85,6 +86,7 @@ class ViewPackage(QWidget):
                 # Package title and action buttons
                 title_widget = QWidget()
                 title_layout = QHBoxLayout()
+                title_layout.setContentsMargins(0, 0, 0, 0)
 
                 package_title = QLabel(f"{p_name}")
                 package_title.setStyleSheet(
@@ -117,7 +119,8 @@ class ViewPackage(QWidget):
                     """
                 )
                 update_button.setFixedWidth(100)
-                update_button.clicked.connect(lambda state, id=p_id: self.update_package(id))
+                from functools import partial
+                update_button.clicked.connect(partial(self.update_package, p_id))
                 title_layout.addWidget(update_button)
 
                 delete_button = QPushButton("Delete")
@@ -133,11 +136,13 @@ class ViewPackage(QWidget):
 
                     QPushButton:hover {
                         background-color: #AE544F;
+                        color: #ffffff;
                     }
                     """
                 )
                 delete_button.setFixedWidth(100)
-                delete_button.clicked.connect(lambda state, id=p_id: self.delete_package(id))
+                from functools import partial
+                delete_button.clicked.connect(partial(self.delete_package, p_id))
                 title_layout.addWidget(delete_button)
 
                 title_widget.setLayout(title_layout)
@@ -145,15 +150,100 @@ class ViewPackage(QWidget):
 
                 # Description
                 description_label = QTextEdit(f"{description}")
+                row_height = description_label.fontMetrics().lineSpacing()  # Get the height of one row of text
+                max_rows = 5  # Set the maximum number of rows
+                max_height = max_rows * row_height  # Calculate the maximum height
+                description_label.setMaximumHeight(max_height)  # Set the maximum height of the QTextEdit
+
+                description_label.setStyleSheet(
+                    """
+                    QTextEdit {
+                        background: #F4F4F4;
+                        border-radius: 10px;color: #4C4C6C;
+                        text-align: justify;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding: 5px;
+                    }
+                    """
+                )
                 info_layout.addWidget(description_label)
 
                 # Cost per person
-                cost_label = QLabel(f"Cost per Person: {cost_per_person}")
-                info_layout.addWidget(cost_label)
+                # 2.3 person count
 
-                # Complementary services
-                complementary_label = QLabel(f"Complementary: {complementary}")
-                info_layout.addWidget(complementary_label)
+                price_count = QWidget()
+                price_count_layout = QHBoxLayout()
+                price_count_layout.setContentsMargins(0, 0, 0, 0)
+
+                count = QSpinBox()
+
+                # Set the range from 1 to 1000
+                count.setRange(1, 1000)
+
+                # Apply custom style using a style sheet
+                count.setStyleSheet(
+                    """
+                    QSpinBox {
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        padding: 5px;
+                        background-color: #fff;
+                        min-width: 150px;
+                    }
+                    """
+                )
+
+                price_count_layout.addWidget(count)
+
+                price = QLabel(f"Cost per Person: {cost_per_person}")
+                price_count_layout.addWidget(price)
+
+                # Add a horizontal spacer
+                spacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+                price_count_layout.addItem(spacer)
+
+                price_count.setLayout(price_count_layout)
+                info_layout.addWidget(price_count)
+
+                #4 services
+
+                # Create a grid layout
+                grid_layout = QGridLayout()
+
+                # Split the complementary services
+                complementary_services = complementary.split(", ")
+
+                # Add bullet labels to the grid layout
+                row = 0
+                col = 0
+                for index, service in enumerate(complementary_services):
+                    service_label = QLabel(f"* {service.strip()}")
+                    grid_layout.addWidget(service_label, index // 3, index % 3, alignment=Qt.AlignLeft)
+
+                    # Move to the next column
+                    col += 1
+
+                    # Move to the next row if the column reaches the third column
+                    if col == 3:
+                        col = 0
+                        row += 1
+
+                # Create a widget to contain the grid layout
+                grid_widget = QWidget()
+                grid_widget.setLayout(grid_layout)
+
+                # Set horizontal stretch factor to make the grid expand
+                grid_widget.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+
+                # Add the grid widget to your main layout
+                info_layout.addWidget(grid_widget)
+
+                # Add a horizontal spacer
+                horizontal_spacer = QSpacerItem(0, 10, QSizePolicy.Expanding, QSizePolicy.Expanding)
+                info_layout.addItem(horizontal_spacer)
 
                 info_widget.setLayout(info_layout)
                 package_layout.addWidget(info_widget)
@@ -217,9 +307,28 @@ class ViewPackage(QWidget):
                     child.widget().deleteLater()
 
     def update_package(self, package_id):
-        # Implement package update functionality here
-        pass
+        from application.package.update_package_section import UpdatePackage
+        self.update_pack = UpdatePackage(package_id)
+        self.update_pack.show()
 
     def delete_package(self, package_id):
-        # Implement package deletion functionality here
-        pass
+        try:
+            connection = self.connect_to_mysql()
+            if connection:
+                cursor = connection.cursor()
+
+                # Execute the DELETE query
+                cursor.execute("DELETE FROM packages WHERE p_id = %s", (package_id,))
+
+                # Commit the transaction
+                connection.commit()
+
+                print("Package deleted successfully!")
+                QMessageBox.information(self, "Success", "Package deleted successfully!")
+
+                cursor.close()
+
+        except mysql.connector.Error as e:
+            print("Error:", e)
+            # Handle the error accordingly, such as displaying an error message or logging the error
+

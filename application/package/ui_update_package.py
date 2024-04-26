@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'add_packageojqpFB.ui'
+## Form generated from reading UI file 'update_packageKdTqsh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -17,28 +17,28 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFormLayout,
     QFrame, QHBoxLayout, QLabel, QLineEdit,
-    QPushButton, QScrollArea, QSizePolicy, QSpacerItem,
-    QTextEdit, QVBoxLayout, QWidget)
+    QMainWindow, QPushButton, QScrollArea, QSizePolicy,
+    QSpacerItem, QTextEdit, QVBoxLayout, QWidget)
 
-class Ui_add_package_form(object):
-    def setupUi(self, add_package_form):
-        if not add_package_form.objectName():
-            add_package_form.setObjectName(u"add_package_form")
-        add_package_form.resize(698, 613)
-        add_package_form.setMinimumSize(QSize(335, 400))
-        add_package_form.setMaximumSize(QSize(16777215, 16777215))
-        add_package_form.setStyleSheet(u"border:none;")
-        self.horizontalLayout = QHBoxLayout(add_package_form)
+class Ui_update_package(object):
+    def setupUi(self, update_package):
+        if not update_package.objectName():
+            update_package.setObjectName(u"update_package")
+        update_package.resize(800, 600)
+        self.centralwidget = QWidget(update_package)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.horizontalLayout = QHBoxLayout(self.centralwidget)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.display_mgt_package_3 = QScrollArea(add_package_form)
+        self.display_mgt_package_3 = QScrollArea(self.centralwidget)
         self.display_mgt_package_3.setObjectName(u"display_mgt_package_3")
         self.display_mgt_package_3.setMinimumSize(QSize(200, 0))
         self.display_mgt_package_3.setMaximumSize(QSize(16777215, 16777215))
+        self.display_mgt_package_3.setStyleSheet(u"border:none;")
         self.display_mgt_package_3.setLineWidth(0)
         self.display_mgt_package_3.setWidgetResizable(True)
         self.scrollAreaWidgetContents_4 = QWidget()
         self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
-        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 680, 595))
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 782, 582))
         self.horizontalLayout_2 = QHBoxLayout(self.scrollAreaWidgetContents_4)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.frame = QFrame(self.scrollAreaWidgetContents_4)
@@ -381,34 +381,35 @@ class Ui_add_package_form(object):
 
         self.horizontalLayout.addWidget(self.display_mgt_package_3)
 
+        update_package.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(add_package_form)
+        self.retranslateUi(update_package)
 
-        QMetaObject.connectSlotsByName(add_package_form)
+        QMetaObject.connectSlotsByName(update_package)
     # setupUi
 
-    def retranslateUi(self, add_package_form):
-        add_package_form.setWindowTitle(QCoreApplication.translate("add_package_form", u"add_package", None))
-        self.label_12.setText(QCoreApplication.translate("add_package_form", u"Package id", None))
-        self.txt_p_id.setPlaceholderText(QCoreApplication.translate("add_package_form", u"P0001", None))
-        self.label_13.setText(QCoreApplication.translate("add_package_form", u"Package Title", None))
-        self.txt_p_title.setPlaceholderText(QCoreApplication.translate("add_package_form", u"example : Outdoor Night Party", None))
-        self.label_14.setText(QCoreApplication.translate("add_package_form", u"Package Description", None))
-        self.txt_p_description.setPlaceholderText(QCoreApplication.translate("add_package_form", u"example : Type about the outdoor Night Party", None))
-        self.label_15.setText(QCoreApplication.translate("add_package_form", u"Cost per person", None))
-        self.chk_price.setText(QCoreApplication.translate("add_package_form", u"Standard Price Method", None))
-        self.label_16.setText(QCoreApplication.translate("add_package_form", u"Category", None))
-        self.label_17.setText(QCoreApplication.translate("add_package_form", u"Complementary", None))
-        self.chk_com_wifi.setText(QCoreApplication.translate("add_package_form", u"FREE WIFI", None))
-        self.chk_com_security.setText(QCoreApplication.translate("add_package_form", u"24HR SECURITY", None))
-        self.chk_com_butler_service.setText(QCoreApplication.translate("add_package_form", u"BUTLER SERVICE", None))
-        self.chk_com_car.setText(QCoreApplication.translate("add_package_form", u"CAR PARKING", None))
-        self.chk_com_pool.setText(QCoreApplication.translate("add_package_form", u"INFINITY POOL", None))
-        self.chk_com_24hr_service.setText(QCoreApplication.translate("add_package_form", u"24HR SERVICE ", None))
-        self.label_25.setText(QCoreApplication.translate("add_package_form", u"Package Image", None))
-        self.btn_browser_img_2.setText(QCoreApplication.translate("add_package_form", u"Browser Image", None))
+    def retranslateUi(self, update_package):
+        update_package.setWindowTitle(QCoreApplication.translate("update_package", u"Update Package", None))
+        self.label_12.setText(QCoreApplication.translate("update_package", u"Package id", None))
+        self.txt_p_id.setPlaceholderText(QCoreApplication.translate("update_package", u"P0001", None))
+        self.label_13.setText(QCoreApplication.translate("update_package", u"Package Title", None))
+        self.txt_p_title.setPlaceholderText(QCoreApplication.translate("update_package", u"example : Outdoor Night Party", None))
+        self.label_14.setText(QCoreApplication.translate("update_package", u"Package Description", None))
+        self.txt_p_description.setPlaceholderText(QCoreApplication.translate("update_package", u"example : Type about the outdoor Night Party", None))
+        self.label_15.setText(QCoreApplication.translate("update_package", u"Cost per person", None))
+        self.chk_price.setText(QCoreApplication.translate("update_package", u"Standard Price Method", None))
+        self.label_16.setText(QCoreApplication.translate("update_package", u"Category", None))
+        self.label_17.setText(QCoreApplication.translate("update_package", u"Complementary", None))
+        self.chk_com_wifi.setText(QCoreApplication.translate("update_package", u"FREE WIFI", None))
+        self.chk_com_security.setText(QCoreApplication.translate("update_package", u"24HR SECURITY", None))
+        self.chk_com_butler_service.setText(QCoreApplication.translate("update_package", u"BUTLER SERVICE", None))
+        self.chk_com_car.setText(QCoreApplication.translate("update_package", u"CAR PARKING", None))
+        self.chk_com_pool.setText(QCoreApplication.translate("update_package", u"INFINITY POOL", None))
+        self.chk_com_24hr_service.setText(QCoreApplication.translate("update_package", u"24HR SERVICE ", None))
+        self.label_25.setText(QCoreApplication.translate("update_package", u"Package Image", None))
+        self.btn_browser_img_2.setText(QCoreApplication.translate("update_package", u"Browser Image", None))
         self.lbl_display_img_2.setText("")
-        self.btn_clear_2.setText(QCoreApplication.translate("add_package_form", u"Clear", None))
-        self.btn_save_package_2.setText(QCoreApplication.translate("add_package_form", u"Save", None))
+        self.btn_clear_2.setText(QCoreApplication.translate("update_package", u"Clear", None))
+        self.btn_save_package_2.setText(QCoreApplication.translate("update_package", u"Save", None))
     # retranslateUi
 

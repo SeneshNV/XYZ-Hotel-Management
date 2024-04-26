@@ -107,7 +107,7 @@ class AddPackage(QWidget):
             pixmap = QPixmap(image_dest_path)
 
             # Resize the pixmap to 100x100
-            pixmap = pixmap.scaled(240, 140, Qt.KeepAspectRatio)
+            pixmap = pixmap.scaled(240, 160, Qt.KeepAspectRatio)
 
             # Set the QPixmap object as the pixmap for the label
             self.ui.lbl_display_img_2.setPixmap(pixmap)  # Display the uploaded image
@@ -128,12 +128,12 @@ class AddPackage(QWidget):
 
             # Get complementary checkboxes that are checked
             complementary_checkboxes = [
-                "Wifi" if self.ui.chk_com_wifi.isChecked() else "",
-                "Security" if self.ui.chk_com_security.isChecked() else "",
-                "Butler Service" if self.ui.chk_com_butler_service.isChecked() else "",
-                "Car" if self.ui.chk_com_car.isChecked() else "",
-                "Pool" if self.ui.chk_com_pool.isChecked() else "",
-                "24hr Service" if self.ui.chk_com_24hr_service.isChecked() else "",
+                "FREE WIFI" if self.ui.chk_com_wifi.isChecked() else "",
+                "24HR SECURITY " if self.ui.chk_com_security.isChecked() else "",
+                "BUTLER SERVICE" if self.ui.chk_com_butler_service.isChecked() else "",
+                "CAR PARKING" if self.ui.chk_com_car.isChecked() else "",
+                "INFINITY POOL" if self.ui.chk_com_pool.isChecked() else "",
+                "24HR SERVICE" if self.ui.chk_com_24hr_service.isChecked() else "",
             ]
 
             # Filter out empty strings (unchecked checkboxes)
@@ -187,8 +187,8 @@ class AddPackage(QWidget):
         elif not description.strip():
             self.show_message("Validation Error", "Please enter a Description.")
             return False
-        elif len(description) > 100:
-            self.show_message("Validation Error", "Description must be at most 100 characters long.")
+        elif len(description) > 300:
+            self.show_message("Validation Error", "Description must be at most 300 characters long.")
             return False
         elif not p_image:
             self.show_message("Validation Error", "Please upload a profile picture.")

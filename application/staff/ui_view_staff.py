@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'view_staffnVCaxh.ui'
+## Form generated from reading UI file 'view_staffgrHaiS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -142,7 +142,7 @@ class Ui_view_staff_form(object):
         self.view_s_id.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -164,7 +164,7 @@ class Ui_view_staff_form(object):
         self.view_s_name.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -297,7 +297,7 @@ class Ui_view_staff_form(object):
         self.view_s_address.setStyleSheet(u"QTextEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -351,7 +351,7 @@ class Ui_view_staff_form(object):
         self.view_s_tel.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -403,7 +403,7 @@ class Ui_view_staff_form(object):
         self.view_s_email.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -456,7 +456,7 @@ class Ui_view_staff_form(object):
         self.view_s_salary.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -473,7 +473,7 @@ class Ui_view_staff_form(object):
         self.view_s_gender.setStyleSheet(u"QComboBox{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -491,7 +491,7 @@ class Ui_view_staff_form(object):
         self.view_s_department.setStyleSheet(u"QComboBox{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"

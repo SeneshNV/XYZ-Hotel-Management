@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>update_package</class>
+ <widget class="QMainWindow" name="update_package">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Update Package</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QScrollArea" name="display_mgt_package_3">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>782</width>
+         <height>582</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QFormLayout" name="formLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Package id</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="txt_p_id">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #404040;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+               </property>
+               <property name="placeholderText">
+                <string>P0001</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Package Title</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="txt_p_title">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #404040;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+               </property>
+               <property name="placeholderText">
+                <string>example : Outdoor Night Party</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Package Description</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QTextEdit" name="txt_p_description">
+               <property name="styleSheet">
+                <string notr="true">QTextEdit{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #404040;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+               </property>
+               <property name="placeholderText">
+                <string>example : Type about the outdoor Night Party</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>Cost per person</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="chk_price">
+               <property name="styleSheet">
+                <string notr="true">QCheckBox{
+    background-color: none;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+               </property>
+               <property name="text">
+                <string>Standard Price Method</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>Category</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QComboBox" name="cmb_category">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>Complementary</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QFrame" name="frame_16">
+               <property name="styleSheet">
+                <string notr="true">QCheckBox{
+    background-color: none;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <widget class="QCheckBox" name="chk_com_wifi">
+                  <property name="text">
+                   <string>FREE WIFI</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chk_com_security">
+                  <property name="text">
+                   <string>24HR SECURITY</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chk_com_butler_service">
+                  <property name="text">
+                   <string>BUTLER SERVICE</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chk_com_car">
+                  <property name="text">
+                   <string>CAR PARKING</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chk_com_pool">
+                  <property name="text">
+                   <string>INFINITY POOL</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chk_com_24hr_service">
+                  <property name="text">
+                   <string>24HR SERVICE </string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QFormLayout" name="formLayout_2">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>Package Image</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="btn_browser_img_2">
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>Browser Image</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="lbl_display_img_2">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>160</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>240</width>
+                 <height>160</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+    background-color: #D9D9D9;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #4C4C6C;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px; 
+	text-align: left;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_19">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>23</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_clear_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>120</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #C79C99;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #00000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Clear</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>2</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_save_package_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>120</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #4C4C6C;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #46464b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #AE544F;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #AE544F;
+ 	color: #FFFFFF;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Save</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>1</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'view_packagemFRnbm.ui'
+## Form generated from reading UI file 'view_packageddUKpl.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -28,10 +28,11 @@ class Ui_view_package_form(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.package_list = QScrollArea(view_package_form)
         self.package_list.setObjectName(u"package_list")
+        self.package_list.setStyleSheet(u"border:none;")
         self.package_list.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 315, 380))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 317, 382))
         self.package_list.setWidget(self.scrollAreaWidgetContents)
 
         self.verticalLayout.addWidget(self.package_list)

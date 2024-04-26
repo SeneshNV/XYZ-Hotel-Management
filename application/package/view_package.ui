@@ -22,6 +22,9 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QScrollArea" name="package_list">
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
@@ -30,8 +33,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>315</width>
-        <height>380</height>
+        <width>317</width>
+        <height>382</height>
        </rect>
       </property>
      </widget>

@@ -104,7 +104,7 @@ color: #a8a8a8;</string>
                <string notr="true">QLineEdit{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 
@@ -133,7 +133,7 @@ color: #a8a8a8;</string>
                <string notr="true">QLineEdit{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 
@@ -190,7 +190,7 @@ color: #a8a8a8;</string>
                <string notr="true">QTextEdit{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 
@@ -219,7 +219,7 @@ color: #a8a8a8;</string>
                <string notr="true">QLineEdit{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 
@@ -248,7 +248,7 @@ color: #a8a8a8;</string>
                <string notr="true">QLineEdit{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 
@@ -277,7 +277,7 @@ color: #a8a8a8;</string>
                <string notr="true">QLineEdit{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 
@@ -437,7 +437,7 @@ QPushButton:checked {
                <string notr="true">QComboBox{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 
@@ -462,7 +462,7 @@ QPushButton:checked {
                <string notr="true">QComboBox{
     background-color: #D9D9D9;
 	font: 10pt &quot;SF Pro Display&quot;;
-    color: #4C4C6C;
+    color: #404040;
     border: none;
     border-radius: 10px;
     padding: 8px 16px; 

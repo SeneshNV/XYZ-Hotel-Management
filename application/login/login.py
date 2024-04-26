@@ -91,7 +91,7 @@ class Login_Screen(QWidget):
     def validate_admin_credentials(self, username, password):
         try:
             cursor = self.connection.cursor()
-            query = "SELECT * FROM login WHERE username = %s AND password = %s"
+            query = "SELECT * FROM admin WHERE username = %s AND password = %s"
             cursor.execute(query, (username, password))
             result = cursor.fetchone()
             cursor.close()

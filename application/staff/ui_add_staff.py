@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'add_staffsomSbJ.ui'
+## Form generated from reading UI file 'add_staffQGaulN.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -69,7 +69,7 @@ class Ui_add_staff_form(object):
         self.upload_s_id_2.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -90,7 +90,7 @@ class Ui_add_staff_form(object):
         self.upload_s_name_2.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -126,7 +126,7 @@ class Ui_add_staff_form(object):
         self.upload_s_address_2.setStyleSheet(u"QTextEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -147,7 +147,7 @@ class Ui_add_staff_form(object):
         self.upload_s_tel_2.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -168,7 +168,7 @@ class Ui_add_staff_form(object):
         self.upload_s_email_2.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -189,7 +189,7 @@ class Ui_add_staff_form(object):
         self.upload_s_salary_2.setStyleSheet(u"QLineEdit{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -282,7 +282,7 @@ class Ui_add_staff_form(object):
         self.upload_s_gender.setStyleSheet(u"QComboBox{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
@@ -300,7 +300,7 @@ class Ui_add_staff_form(object):
         self.upload_s_department.setStyleSheet(u"QComboBox{\n"
 "    background-color: #D9D9D9;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #404040;\n"
 "    border: none;\n"
 "    border-radius: 10px;\n"
 "    padding: 8px 16px; \n"
