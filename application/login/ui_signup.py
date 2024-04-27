@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'signupGYafyw.ui'
+## Form generated from reading UI file 'signupgjlBMZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -57,7 +57,7 @@ class Ui_login(object):
         self.verticalLayout_8 = QVBoxLayout(self.frame_2)
         self.verticalLayout_8.setSpacing(0)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
-        self.verticalLayout_8.setContentsMargins(-1, 6, 0, -1)
+        self.verticalLayout_8.setContentsMargins(20, 6, 0, -1)
         self.frame_3 = QFrame(self.frame_2)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
@@ -176,14 +176,14 @@ class Ui_login(object):
 
         self.verticalLayout_7.addWidget(self.frame_12)
 
-        self.frame_9 = QFrame(self.frame_4)
-        self.frame_9.setObjectName(u"frame_9")
-        self.frame_9.setFrameShape(QFrame.StyledPanel)
-        self.frame_9.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_5 = QVBoxLayout(self.frame_9)
+        self.u_pass = QFrame(self.frame_4)
+        self.u_pass.setObjectName(u"u_pass")
+        self.u_pass.setFrameShape(QFrame.StyledPanel)
+        self.u_pass.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_5 = QVBoxLayout(self.u_pass)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.verticalLayout_5.setContentsMargins(0, -1, -1, -1)
-        self.txt_nw_pass = QLineEdit(self.frame_9)
+        self.txt_nw_pass = QLineEdit(self.u_pass)
         self.txt_nw_pass.setObjectName(u"txt_nw_pass")
         self.txt_nw_pass.setMinimumSize(QSize(0, 30))
         self.txt_nw_pass.setStyleSheet(u"border:none;\n"
@@ -195,7 +195,7 @@ class Ui_login(object):
 
         self.verticalLayout_5.addWidget(self.txt_nw_pass)
 
-        self.line_3 = QFrame(self.frame_9)
+        self.line_3 = QFrame(self.u_pass)
         self.line_3.setObjectName(u"line_3")
         self.line_3.setFrameShape(QFrame.HLine)
         self.line_3.setFrameShadow(QFrame.Sunken)
@@ -203,7 +203,7 @@ class Ui_login(object):
         self.verticalLayout_5.addWidget(self.line_3)
 
 
-        self.verticalLayout_7.addWidget(self.frame_9)
+        self.verticalLayout_7.addWidget(self.u_pass)
 
         self.frame_11 = QFrame(self.frame_4)
         self.frame_11.setObjectName(u"frame_11")
@@ -267,16 +267,17 @@ class Ui_login(object):
         self.frame_6.setObjectName(u"frame_6")
         self.frame_6.setFrameShape(QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.frame_6)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.horizontalLayout_3.setContentsMargins(-1, 0, -1, 0)
-        self.btn_have_acc = QLabel(self.frame_6)
+        self.verticalLayout_4 = QVBoxLayout(self.frame_6)
+        self.verticalLayout_4.setSpacing(0)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 9)
+        self.btn_have_acc = QPushButton(self.frame_6)
         self.btn_have_acc.setObjectName(u"btn_have_acc")
-        self.btn_have_acc.setMinimumSize(QSize(0, 20))
         self.btn_have_acc.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_have_acc.setAlignment(Qt.AlignCenter)
+        self.btn_have_acc.setStyleSheet(u"border:none;\n"
+"background:transparent;")
 
-        self.horizontalLayout_3.addWidget(self.btn_have_acc)
+        self.verticalLayout_4.addWidget(self.btn_have_acc)
 
 
         self.verticalLayout_8.addWidget(self.frame_6)
@@ -286,6 +287,7 @@ class Ui_login(object):
 
 
         self.retranslateUi(login)
+        self.pushButton.clicked.connect(login.close)
         self.pushButton.clicked.connect(login.close)
 
         QMetaObject.connectSlotsByName(login)
@@ -300,7 +302,7 @@ class Ui_login(object):
         self.txt_nw_uname.setPlaceholderText(QCoreApplication.translate("login", u"Username", None))
         self.txt_nw_email.setPlaceholderText(QCoreApplication.translate("login", u"E-mail", None))
         self.txt_nw_pass.setPlaceholderText(QCoreApplication.translate("login", u"Password", None))
-        self.txt_nw_re_pass.setPlaceholderText(QCoreApplication.translate("login", u"Password", None))
+        self.txt_nw_re_pass.setPlaceholderText(QCoreApplication.translate("login", u"Re-enter Password", None))
         self.btn_signup.setText(QCoreApplication.translate("login", u"Sign up", None))
         self.btn_have_acc.setText(QCoreApplication.translate("login", u"I already have an account", None))
     # retranslateUi

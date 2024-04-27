@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'loginZUzgIv.ui'
+## Form generated from reading UI file 'loginxqYNyh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -226,11 +226,14 @@ class Ui_login(object):
 
         self.verticalLayout_2.addWidget(self.btn_login)
 
-        self.btn_forgot_pass = QLabel(self.frame_5)
-        self.btn_forgot_pass.setObjectName(u"btn_forgot_pass")
-        self.btn_forgot_pass.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_forgot = QPushButton(self.frame_5)
+        self.btn_forgot.setObjectName(u"btn_forgot")
+        self.btn_forgot.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_forgot.setStyleSheet(u"border:none;\n"
+"background:transparent;\n"
+"text-align:left;")
 
-        self.verticalLayout_2.addWidget(self.btn_forgot_pass)
+        self.verticalLayout_2.addWidget(self.btn_forgot)
 
 
         self.verticalLayout_8.addWidget(self.frame_5)
@@ -243,14 +246,15 @@ class Ui_login(object):
         self.frame_6.setObjectName(u"frame_6")
         self.frame_6.setFrameShape(QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.frame_6)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.btn_create_acc = QLabel(self.frame_6)
+        self.verticalLayout_4 = QVBoxLayout(self.frame_6)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.btn_create_acc = QPushButton(self.frame_6)
         self.btn_create_acc.setObjectName(u"btn_create_acc")
         self.btn_create_acc.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_create_acc.setAlignment(Qt.AlignCenter)
+        self.btn_create_acc.setStyleSheet(u"border:none;\n"
+"background:transparent;")
 
-        self.horizontalLayout_3.addWidget(self.btn_create_acc)
+        self.verticalLayout_4.addWidget(self.btn_create_acc)
 
 
         self.verticalLayout_8.addWidget(self.frame_6)
@@ -277,7 +281,7 @@ class Ui_login(object):
         self.cmb_u_acc_type.setItemText(1, QCoreApplication.translate("login", u"Administrator Account", None))
 
         self.btn_login.setText(QCoreApplication.translate("login", u"Login", None))
-        self.btn_forgot_pass.setText(QCoreApplication.translate("login", u"forgot password ?", None))
+        self.btn_forgot.setText(QCoreApplication.translate("login", u"forgot password ?", None))
         self.btn_create_acc.setText(QCoreApplication.translate("login", u"Create an account", None))
     # retranslateUi
 

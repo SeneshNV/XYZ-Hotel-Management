@@ -27,6 +27,7 @@ class Login_Screen(QWidget):
 
         # Connect button click event
         self.ui.btn_login.clicked.connect(self.login_button_clicked)
+        self.ui.btn_create_acc.clicked.connect(self.create_acc)
 
     def connect_to_mysql(self):
         try:
@@ -84,6 +85,18 @@ class Login_Screen(QWidget):
                         self.show_message("Error", "Invalid username or password for Administrator Account")
                 else:
                     print("Regular user login")
+                    username = self.ui.txt_u_name.text()
+                    password = self.ui.txt_u_pass.text()
+                    if self.validate_customer_credentials(username, password):
+                        print("Credentials are valid")
+
+                        # from application.admin_main.admin_main import AdminMainScreen
+                        # self.admin_main_screen = AdminMainScreen()
+                        # self.admin_main_screen.show()
+                        # self.close()
+
+                    else:
+                        self.show_message("Error", "Invalid username or password for Customer Account")
 
             except Exception as e:
                 print("Error:", e)
@@ -99,4 +112,23 @@ class Login_Screen(QWidget):
         except mysql.connector.Error as e:
             print("Error validating credentials:", e)
             return False
+
+    def validate_customer_credentials(self, username, password):
+        try:
+            cursor = self.connection.cursor()
+            query = "SELECT * FROM login WHERE username = %s AND password = %s"
+            cursor.execute(query, (username, password))
+            result = cursor.fetchone()
+            cursor.close()
+            return result is not None
+        except mysql.connector.Error as e:
+            print("Error validating credentials:", e)
+            return False
+
+
+    def create_acc(self):
+        from application.login.signup import Signup_Screen
+        self.Signup_Screen = Signup_Screen()
+        self.Signup_Screen.show()
+        self.close()
 
