@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>684</width>
-    <height>494</height>
+    <width>640</width>
+    <height>464</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,21 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <widget class="QFrame" name="frame">
      <property name="frameShape">
@@ -26,12 +41,33 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
       <item>
        <widget class="QLabel" name="label_5">
         <property name="minimumSize">
          <size>
           <width>310</width>
           <height>338</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>310</width>
+          <height>16777215</height>
          </size>
         </property>
         <property name="text">
@@ -44,6 +80,12 @@
    </item>
    <item>
     <widget class="QFrame" name="frame_2">
+     <property name="maximumSize">
+      <size>
+       <width>330</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="styleSheet">
       <string notr="true">font-family: 'SF Pro Display';</string>
      </property>
@@ -59,6 +101,9 @@
       </property>
       <property name="topMargin">
        <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
       </property>
       <item>
        <widget class="QFrame" name="frame_3">
@@ -134,9 +179,8 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="../../icon/icon.qrc">
-                <normaloff>:/newPrefix/x-circle.svg</normaloff>
-                <normalon>:/newPrefix/x-circle 2.svg</normalon>:/newPrefix/x-circle.svg</iconset>
+               <iconset resource="../../icon.qrc">
+                <normaloff>:/newPrefix/icon/x-circle.svg</normaloff>:/newPrefix/icon/x-circle.svg</iconset>
               </property>
              </widget>
             </item>
@@ -477,7 +521,7 @@ color: rgb(255, 255, 255);</string>
   </layout>
  </widget>
  <resources>
-  <include location="../../icon/icon.qrc"/>
+  <include location="../../icon.qrc"/>
  </resources>
  <connections>
   <connection>

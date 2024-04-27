@@ -168,8 +168,10 @@ class UpdatePackage(QMainWindow):
             QMessageBox.information(self, "Success", "Package updated successfully!")
             # Reset the form if needed
             # self.reset_form()
-            self.close()
+
             cursor.close()
+
+            self.close()
 
         except mysql.connector.Error as e:
             print("Error:", e)
@@ -234,6 +236,8 @@ class UpdatePackage(QMainWindow):
                         self.ui.chk_com_pool.setChecked(True)
                     elif service == "24HR SERVICE":
                         self.ui.chk_com_24hr_service.setChecked(True)
+
+            cursor.close()
 
         except mysql.connector.Error as e:
             print("Error:", e)

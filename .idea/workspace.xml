@@ -5,29 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/package/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0027.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0028.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0027.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0027.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0028.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0027.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0028.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0030.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/signup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/ui_signup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/def.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/s.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sdf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sdfs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/we.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P006.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/image_repo/P006.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/login/signup.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/signup.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/package/image_repo/P007.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/image_repo/P007.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/ui_view_package.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/ui_view_package.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/update_package_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/update_package_section.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/view_package.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/view_package.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/package/view_packages_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/view_packages_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0021.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0021.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/image_repo/S0021.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/ui_view_staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/ui_view_staff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/view_staff.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/view_staff.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/staff/view_staff_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/view_staff_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/icon.qrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon_rc.py" beforeDir="false" afterPath="$PROJECT_DIR$/icon_rc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/login_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/login_img.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/splash_img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/splash_img.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +48,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "Python.view_staff_section.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/XYZ Hotel Management",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_staff_section.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/XYZ Hotel Management&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

@@ -24,6 +24,7 @@ class ViewPackage(QWidget):
         # Display packages when the widget is initialized
         self.display_packages()
 
+        self.ui.btn_search.clicked.connect(self.display_packages)
 
     def show_message(self, title, message):
         QMessageBox.warning(self, title, message)
@@ -50,11 +51,23 @@ class ViewPackage(QWidget):
         try:
             cursor = self.connect_to_mysql().cursor()
 
-            # Fetch data from the packages table
-            cursor.execute("SELECT p_id, p_name, cost_per_person, description,"
-                           "complementary, p_image FROM packages")
+            search_text = self.ui.txt_search.text().strip()
 
-            package_records = cursor.fetchall()
+            # If search text is empty, display all staff
+            if not search_text:
+                # Fetch data from the packages table
+                cursor.execute("SELECT p_id, p_name, cost_per_person, description,"
+                               "complementary, p_image FROM packages")
+
+                package_records = cursor.fetchall()
+            else:
+                cursor.execute("SELECT p_id, p_name, cost_per_person, description,"
+                               "complementary, p_image FROM packages WHERE p_name LIKE %s",
+                               ('%' + search_text + '%',))
+
+                package_records = cursor.fetchall()
+
+
 
             # Clear any existing items in the list widget
             self.clear_list_widget()
@@ -315,6 +328,13 @@ class ViewPackage(QWidget):
         from application.package.update_package_section import UpdatePackage
         self.update_pack = UpdatePackage(package_id)
         self.update_pack.show()
+        self.refresh_after_update()
+
+    def refresh_after_update(self):
+        try:
+            self.display_packages()
+        except Exception as e:
+            print("Error refreshing package display:", e)
 
     def delete_package(self, package_id):
         try:
@@ -362,3 +382,4 @@ class ViewPackage(QWidget):
         # Update the price label
         price_label.setText(f"Total Cost: Rs. {total_price}")
 
+        cursor.close()
