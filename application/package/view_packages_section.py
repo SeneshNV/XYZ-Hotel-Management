@@ -59,8 +59,10 @@ class ViewPackage(QWidget):
             # Clear any existing items in the list widget
             self.clear_list_widget()
 
-            # Create a vertical layout for the list widget's internal widget
-            internal_layout = QVBoxLayout()
+            # Get the existing layout or create a new one if none exists
+            internal_layout = self.ui.package_list.widget().layout()
+            if not internal_layout:
+                internal_layout = QVBoxLayout()
 
             # Iterate over the fetched records and populate the list widget
             for record in package_records:
@@ -181,7 +183,7 @@ class ViewPackage(QWidget):
                 count = QSpinBox()
 
                 # Set the range from 1 to 1000
-                count.setRange(1, 1000)
+                count.setRange(0, 1000)
 
                 # Apply custom style using a style sheet
                 count.setStyleSheet(
@@ -197,9 +199,12 @@ class ViewPackage(QWidget):
                 )
 
                 price_count_layout.addWidget(count)
+                price = QLabel()
 
-                price = QLabel(f"Cost per Person: {cost_per_person}")
                 price_count_layout.addWidget(price)
+
+                count.valueChanged.connect(
+                    lambda value, counts=count, prices=price: self.update_price_label(counts, prices))
 
                 # Add a horizontal spacer
                 spacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
@@ -328,7 +333,32 @@ class ViewPackage(QWidget):
 
                 cursor.close()
 
+                self.display_packages()
+
         except mysql.connector.Error as e:
             print("Error:", e)
             # Handle the error accordingly, such as displaying an error message or logging the error
+
+    def update_price_label(self, count, price_label):
+        # Fetch the current number of persons
+        num_persons = count.value()
+
+        # Fetch data from the number_of_pax table
+        cursor = self.connect_to_mysql().cursor()
+        cursor.execute("SELECT max_no_of_pax, cost FROM number_of_pax ORDER BY max_no_of_pax ASC")
+        tiers = cursor.fetchall()
+
+        # Find the applicable price tier
+        # Find the applicable price tier
+        cost_per_person = 100  # Default cost per person
+        for max_pax, cost in tiers:
+            if num_persons <= max_pax or max_pax == 51:
+                cost_per_person = cost
+                break
+
+        # Calculate total price
+        total_price = num_persons * cost_per_person
+
+        # Update the price label
+        price_label.setText(f"Total Cost: Rs. {total_price}")
 

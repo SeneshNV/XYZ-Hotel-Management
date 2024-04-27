@@ -22,6 +22,7 @@ class ViewStaff(QWidget):
 
         # Load staff data
         self.display_staff()
+        self.ui.btn_search.clicked.connect(self.search_staff)
 
         # Connect buttons to set_editable method
         self.connect_edit_buttons()
@@ -63,8 +64,10 @@ class ViewStaff(QWidget):
             # Clear any existing items in the list widget
             self.clear_list_widget()
 
-            # Create a vertical layout for the list widget's internal widget
-            internal_layout = QVBoxLayout()
+            # Get the existing layout or create a new one if none exists
+            internal_layout = self.ui.staff_member_list_2.widget().layout()
+            if not internal_layout:
+                internal_layout = QVBoxLayout()
 
             # Iterate over the fetched records and populate the list widget
             for record in staff_records:
@@ -143,7 +146,7 @@ class ViewStaff(QWidget):
             vertical_spacer = QSpacerItem(0, 10, QSizePolicy.Minimum, QSizePolicy.Expanding)
             internal_layout.addItem(vertical_spacer)
 
-            self.ui.staff_member_list.widget().setLayout(internal_layout)
+            self.ui.staff_member_list_2.widget().setLayout(internal_layout)
 
             cursor.close()
 
@@ -184,7 +187,7 @@ class ViewStaff(QWidget):
 
     def clear_list_widget(self):
         # Clear the internal layout of the list widget
-        layout = self.ui.staff_member_list.widget().layout()
+        layout = self.ui.staff_member_list_2.widget().layout()
         if layout:
             while layout.count():
                 child = layout.takeAt(0)
@@ -198,15 +201,27 @@ class ViewStaff(QWidget):
             # Execute the DELETE query
             cursor.execute("DELETE FROM staff WHERE staff_id = %s", (self.s_id,))
 
+            # Get the number of affected rows
+            num_deleted = cursor.rowcount
+
             # Commit the transaction
             self.connection.commit()
 
-            print("Staff deleted successfully!")
-            QMessageBox.information(self, "Success", "Staff deleted successfully!")
-
-            # Optionally, you might want to clear the UI fields after deletion
-            self.clear_ui_fields()
+            # Close the cursor
             cursor.close()
+
+            # Clear UI fields after deletion
+            self.clear_ui_fields()
+
+            if num_deleted > 0:
+                # Display success message if staff members were deleted
+                QMessageBox.information(self, "Success", "Staff deleted successfully!")
+            else:
+                # Optionally, you can display a message if no staff members were deleted
+                print("No staff members were deleted.")
+
+            # Update the displayed staff list
+            self.display_staff()
 
         except mysql.connector.Error as e:
             print("Error:", e)
@@ -393,4 +408,114 @@ class ViewStaff(QWidget):
             cursor.close()
             self.spp_image_name = None
 
+    def search_staff(self):
+        self.clear_list_widget()
 
+        print("search")
+        # Get the search text from the txt_search field
+        search_text = self.ui.txt_search.text().strip()
+
+        # If search text is empty, display all staff
+        if not search_text:
+            self.display_staff()
+            return
+
+        try:
+            cursor = self.connect_to_mysql().cursor()
+
+            cursor.execute("SELECT staff_id, s_name, s_photo FROM staff WHERE s_name LIKE %s",
+                           ('%' + search_text + '%',))
+            staff_records = cursor.fetchall()
+
+            # Get the existing layout or create a new one if none exists
+            internal_layout = self.ui.staff_member_list_2.widget().layout()
+            if not internal_layout:
+                internal_layout = QVBoxLayout()
+
+            # Iterate over the fetched records and populate the list widget
+            for record in staff_records:
+                # Extract data from the record
+                staff_id, s_name, s_photo = record
+
+                print(staff_id)
+
+                # Create custom widget to represent the staff member
+                widget = QWidget()
+                layout = QHBoxLayout()  # Horizontal layout for the custom widget
+
+                # 1. Profile picture
+                label_photo = QLabel()
+                pixmap = self.load_round_profile_pic(s_photo)
+                label_photo.setPixmap(pixmap)  # Set rounded pixmap
+                layout.addWidget(label_photo, alignment=Qt.AlignVCenter)
+
+                # 2. ID and name
+                widget_id_name = QWidget()
+                layout_id_name = QVBoxLayout()  # Vertical layout for the ID and name
+
+                label_id = QLabel(f"{staff_id}")
+                layout_id_name.addWidget(label_id)
+
+                label_name = QLabel(f"{s_name}")
+                label_name.setStyleSheet(
+                    """
+                    QLabel {
+                        color: #4C4C6C;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    """
+                )
+                layout_id_name.addWidget(label_name)
+
+                # Set layout for the ID and name widget
+                widget_id_name.setLayout(layout_id_name)
+                layout.addWidget(widget_id_name)
+
+                # Add a horizontal spacer to push the view button to the right
+                spacer = QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
+                layout.addItem(spacer)
+
+                # 3. View button
+                view_button = QPushButton("View")
+                view_button.setStyleSheet(
+                    """
+                    QPushButton {
+                        background-color: #4C4C6C;
+                        color: #ffffff;
+                        padding : 5px 2px;
+                        margin-top: 4px;
+                        border-radius: 10px;
+                    }
+
+                    QPushButton:hover {
+                        background-color: #AE544F;
+                    }
+                    """
+                )
+                view_button.setFixedWidth(100)
+
+                from functools import partial
+                view_button.clicked.connect(partial(self.view_staff, staff_id))
+
+                layout.addWidget(view_button)
+
+                # Set layout for the custom widget
+                widget.setLayout(layout)
+
+                # Add the custom widget to the internal layout
+                internal_layout.addWidget(widget)
+
+            vertical_spacer = QSpacerItem(0, 10, QSizePolicy.Minimum, QSizePolicy.Expanding)
+            internal_layout.addItem(vertical_spacer)
+
+            self.ui.staff_member_list_2.widget().setLayout(internal_layout)
+            self.ui.staff_member_list_2.setVisible(True)
+
+            cursor.close()
+
+        except mysql.connector.Error as e:
+            print("Error:", e)
+            self.show_message("Error", str(e))

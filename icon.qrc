@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>icon/eraser-svgrepo-com.svg</file>
+    <file>icon/icons8-search.svg</file>
     <file>icon/edit.svg</file>
     <file>icon/logout-svgrepo-com.svg</file>
     <file>icon/logout-svgrepo-com(1).svg</file>
