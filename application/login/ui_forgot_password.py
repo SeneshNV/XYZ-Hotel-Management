@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'forgot passwordQzRoma.ui'
+## Form generated from reading UI file 'forgot_passwordXLAqip.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -24,7 +24,7 @@ class Ui_forgot_pass(object):
     def setupUi(self, forgot_pass):
         if not forgot_pass.objectName():
             forgot_pass.setObjectName(u"forgot_pass")
-        forgot_pass.resize(640, 426)
+        forgot_pass.resize(640, 464)
         forgot_pass.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.horizontalLayout = QHBoxLayout(forgot_pass)
         self.horizontalLayout.setSpacing(0)
@@ -216,16 +216,16 @@ class Ui_forgot_pass(object):
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(-1, 0, -1, 0)
-        self.btn_signup = QPushButton(self.frame_5)
-        self.btn_signup.setObjectName(u"btn_signup")
-        self.btn_signup.setMinimumSize(QSize(40, 30))
-        self.btn_signup.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_signup.setStyleSheet(u"background: #AE544F;\n"
+        self.btn_reset = QPushButton(self.frame_5)
+        self.btn_reset.setObjectName(u"btn_reset")
+        self.btn_reset.setMinimumSize(QSize(40, 30))
+        self.btn_reset.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_reset.setStyleSheet(u"background: #AE544F;\n"
 "font: 12pt \"SF Pro Display\";\n"
 "padding : 8px;\n"
 "color: rgb(255, 255, 255);")
 
-        self.verticalLayout_2.addWidget(self.btn_signup)
+        self.verticalLayout_2.addWidget(self.btn_reset)
 
 
         self.verticalLayout_8.addWidget(self.frame_5)
@@ -271,9 +271,9 @@ class Ui_forgot_pass(object):
         self.pushButton.setText("")
         self.label_2.setText(QCoreApplication.translate("forgot_pass", u"Reset Password", None))
         self.txt_nw_uname.setPlaceholderText(QCoreApplication.translate("forgot_pass", u"Username", None))
-        self.txt_nw_pass.setPlaceholderText(QCoreApplication.translate("forgot_pass", u"Password", None))
+        self.txt_nw_pass.setPlaceholderText(QCoreApplication.translate("forgot_pass", u"New Password", None))
         self.txt_nw_re_pass.setPlaceholderText(QCoreApplication.translate("forgot_pass", u"Re-enter Password", None))
-        self.btn_signup.setText(QCoreApplication.translate("forgot_pass", u"Reset Password", None))
+        self.btn_reset.setText(QCoreApplication.translate("forgot_pass", u"Reset Password", None))
         self.btn_have_acc.setText(QCoreApplication.translate("forgot_pass", u"Back to Login", None))
     # retranslateUi
 
