@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'cust_mainfGzmLT.ui'
+## Form generated from reading UI file 'cust_maingDoKkv.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -24,7 +24,7 @@ class Ui_customer_main_window(object):
     def setupUi(self, customer_main_window):
         if not customer_main_window.objectName():
             customer_main_window.setObjectName(u"customer_main_window")
-        customer_main_window.resize(800, 600)
+        customer_main_window.resize(800, 626)
         customer_main_window.setMinimumSize(QSize(800, 600))
         customer_main_window.setStyleSheet(u"font-family: \"SF Pro Display\";")
         self.centralwidget = QWidget(customer_main_window)
@@ -212,15 +212,15 @@ class Ui_customer_main_window(object):
 
         self.verticalLayout_7.addWidget(self.btn_package)
 
-        self.btn_mgt_package = QPushButton(self.frame_12)
-        self.btn_mgt_package.setObjectName(u"btn_mgt_package")
+        self.btn_view_reser = QPushButton(self.frame_12)
+        self.btn_view_reser.setObjectName(u"btn_view_reser")
         icon2 = QIcon()
         icon2.addFile(u":/newPrefix/icon/View boards.svg", QSize(), QIcon.Normal, QIcon.Off)
         icon2.addFile(u":/newPrefix/icon/View boards-1.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_mgt_package.setIcon(icon2)
-        self.btn_mgt_package.setCheckable(True)
+        self.btn_view_reser.setIcon(icon2)
+        self.btn_view_reser.setCheckable(True)
 
-        self.verticalLayout_7.addWidget(self.btn_mgt_package)
+        self.verticalLayout_7.addWidget(self.btn_view_reser)
 
         self.line_2 = QFrame(self.frame_12)
         self.line_2.setObjectName(u"line_2")
@@ -443,25 +443,25 @@ class Ui_customer_main_window(object):
         self.verticalLayout_11.addWidget(self.package_screens)
 
         self.cust_screens.addWidget(self.mgt_package)
-        self.mgt_staff = QWidget()
-        self.mgt_staff.setObjectName(u"mgt_staff")
-        self.verticalLayout_19 = QVBoxLayout(self.mgt_staff)
+        self.mgt_reservation_2 = QWidget()
+        self.mgt_reservation_2.setObjectName(u"mgt_reservation_2")
+        self.verticalLayout_19 = QVBoxLayout(self.mgt_reservation_2)
         self.verticalLayout_19.setSpacing(0)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.verticalLayout_19.setContentsMargins(0, 0, 0, 0)
-        self.frame_15 = QFrame(self.mgt_staff)
+        self.frame_15 = QFrame(self.mgt_reservation_2)
         self.frame_15.setObjectName(u"frame_15")
         self.frame_15.setMinimumSize(QSize(0, 50))
         self.frame_15.setMaximumSize(QSize(16777215, 50))
         self.frame_15.setStyleSheet(u"#frame_15{\n"
-"background: #FFF3F2;\n"
+"background: #C7FFF9;\n"
 "}\n"
 "\n"
 "/* Default button style */\n"
 "QPushButton {\n"
 "    background-color: transparent;\n"
 "	font: 10pt \"SF Pro Display\";\n"
-"    color: #4C4C6C;\n"
+"    color: #3474D4;\n"
 "    border: none;\n"
 "    border-radius: 5px;\n"
 "    padding: 8px 16px; \n"
@@ -472,19 +472,19 @@ class Ui_customer_main_window(object):
 "\n"
 "/* Button style on hover */\n"
 "QPushButton:hover {\n"
-" background-color: #46464b;\n"
+" background-color: #A2DCD7;\n"
 "	color: #ffffff;\n"
 "	font-weight: bold;\n"
 "}\n"
 "\n"
 "/* Button style when pressed */\n"
 "QPushButton:pressed {\n"
-"    background-color: #AE544F;\n"
+"    background-color: #17396D;\n"
 " 	color: #FFFFFF;\n"
 "}\n"
 "\n"
 "QPushButton:checked {\n"
-"	background-color: #AE544F;\n"
+"	background-color: #17396D;\n"
 " 	color: #FFFFFF;\n"
 "}")
         self.frame_15.setFrameShape(QFrame.StyledPanel)
@@ -492,23 +492,13 @@ class Ui_customer_main_window(object):
         self.frame_15.setLineWidth(0)
         self.horizontalLayout_7 = QHBoxLayout(self.frame_15)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.btn_view_staff = QPushButton(self.frame_15)
-        self.btn_view_staff.setObjectName(u"btn_view_staff")
-        self.btn_view_staff.setIcon(icon2)
-        self.btn_view_staff.setCheckable(True)
-        self.btn_view_staff.setChecked(True)
+        self.btn_view_reservations = QPushButton(self.frame_15)
+        self.btn_view_reservations.setObjectName(u"btn_view_reservations")
+        self.btn_view_reservations.setIcon(icon2)
+        self.btn_view_reservations.setCheckable(True)
+        self.btn_view_reservations.setChecked(True)
 
-        self.horizontalLayout_7.addWidget(self.btn_view_staff)
-
-        self.btn_add_staff = QPushButton(self.frame_15)
-        self.btn_add_staff.setObjectName(u"btn_add_staff")
-        icon5 = QIcon()
-        icon5.addFile(u":/newPrefix/icon/Add.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon5.addFile(u":/newPrefix/icon/Add_W.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_add_staff.setIcon(icon5)
-        self.btn_add_staff.setCheckable(True)
-
-        self.horizontalLayout_7.addWidget(self.btn_add_staff)
+        self.horizontalLayout_7.addWidget(self.btn_view_reservations)
 
         self.horizontalSpacer_3 = QSpacerItem(56, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -517,8 +507,8 @@ class Ui_customer_main_window(object):
 
         self.verticalLayout_19.addWidget(self.frame_15)
 
-        self.admin_mgt_package_screens_2 = QStackedWidget(self.mgt_staff)
-        self.admin_mgt_package_screens_2.setObjectName(u"admin_mgt_package_screens_2")
+        self.reservation_screens_2 = QStackedWidget(self.mgt_reservation_2)
+        self.reservation_screens_2.setObjectName(u"reservation_screens_2")
         self.view_staff = QWidget()
         self.view_staff.setObjectName(u"view_staff")
         self.verticalLayout_14 = QVBoxLayout(self.view_staff)
@@ -529,7 +519,7 @@ class Ui_customer_main_window(object):
         self.label_10.setMinimumSize(QSize(0, 20))
         self.label_10.setMaximumSize(QSize(16777215, 20))
         self.label_10.setStyleSheet(u"font: 12pt \"SF Pro Display\";\n"
-"color: rgb(174, 84, 79);")
+"color:rgb(23, 57, 109);")
 
         self.verticalLayout_14.addWidget(self.label_10)
 
@@ -540,7 +530,7 @@ class Ui_customer_main_window(object):
 
         self.verticalLayout_14.addWidget(self.frame_18)
 
-        self.admin_mgt_package_screens_2.addWidget(self.view_staff)
+        self.reservation_screens_2.addWidget(self.view_staff)
         self.add_staff = QWidget()
         self.add_staff.setObjectName(u"add_staff")
         self.verticalLayout = QVBoxLayout(self.add_staff)
@@ -562,11 +552,11 @@ class Ui_customer_main_window(object):
 
         self.verticalLayout.addWidget(self.frame_19)
 
-        self.admin_mgt_package_screens_2.addWidget(self.add_staff)
+        self.reservation_screens_2.addWidget(self.add_staff)
 
-        self.verticalLayout_19.addWidget(self.admin_mgt_package_screens_2)
+        self.verticalLayout_19.addWidget(self.reservation_screens_2)
 
-        self.cust_screens.addWidget(self.mgt_staff)
+        self.cust_screens.addWidget(self.mgt_reservation_2)
 
         self.verticalLayout_10.addWidget(self.cust_screens)
 
@@ -606,7 +596,7 @@ class Ui_customer_main_window(object):
         self.msg_display_area.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 180, 489))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 180, 515))
         self.verticalLayout_9 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.verticalSpacer_2 = QSpacerItem(20, 466, QSizePolicy.Minimum, QSizePolicy.Expanding)
@@ -633,24 +623,24 @@ class Ui_customer_main_window(object):
 
         self.retranslateUi(customer_main_window)
 
-        self.cust_screens.setCurrentIndex(1)
+        self.cust_screens.setCurrentIndex(0)
         self.package_screens.setCurrentIndex(0)
-        self.admin_mgt_package_screens_2.setCurrentIndex(0)
+        self.reservation_screens_2.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(customer_main_window)
     # setupUi
 
     def retranslateUi(self, customer_main_window):
-        customer_main_window.setWindowTitle(QCoreApplication.translate("customer_main_window", u"MainWindow", None))
-        self.label_4.setText(QCoreApplication.translate("customer_main_window", u"XYZ", None))
+        customer_main_window.setWindowTitle(QCoreApplication.translate("customer_main_window", u"XYZ - Customer Application", None))
+        self.label_4.setText(QCoreApplication.translate("customer_main_window", u"Hotel XYZ", None))
         self.label_3.setText(QCoreApplication.translate("customer_main_window", u"Senesh Nagoda Vithana", None))
         self.label_2.setText(QCoreApplication.translate("customer_main_window", u"Customer", None))
         self.label.setText("")
         self.label_5.setText(QCoreApplication.translate("customer_main_window", u"Hotel Management System", None))
         self.btn_dashboard.setText(QCoreApplication.translate("customer_main_window", u"Dashboard", None))
         self.btn_package.setText(QCoreApplication.translate("customer_main_window", u"Packages", None))
-        self.btn_mgt_package.setText(QCoreApplication.translate("customer_main_window", u"Manage Packages", None))
+        self.btn_view_reser.setText(QCoreApplication.translate("customer_main_window", u"View Reservation", None))
         self.btn_settings.setText(QCoreApplication.translate("customer_main_window", u"Settings", None))
         self.btn_about_us.setText(QCoreApplication.translate("customer_main_window", u"About us", None))
         self.btn_about_us_2.setText(QCoreApplication.translate("customer_main_window", u"Logout", None))
@@ -659,9 +649,8 @@ class Ui_customer_main_window(object):
         self.btn_view_package.setText(QCoreApplication.translate("customer_main_window", u"View Packages", None))
         self.label_9.setText(QCoreApplication.translate("customer_main_window", u"Package / View Packages", None))
         self.label_11.setText(QCoreApplication.translate("customer_main_window", u"Package / Manage Reservations", None))
-        self.btn_view_staff.setText(QCoreApplication.translate("customer_main_window", u"View Staff", None))
-        self.btn_add_staff.setText(QCoreApplication.translate("customer_main_window", u"Add Staff", None))
-        self.label_10.setText(QCoreApplication.translate("customer_main_window", u"Manage Staff / View Staff", None))
+        self.btn_view_reservations.setText(QCoreApplication.translate("customer_main_window", u"View Reservation", None))
+        self.label_10.setText(QCoreApplication.translate("customer_main_window", u"View Reservation", None))
         self.label_19.setText(QCoreApplication.translate("customer_main_window", u"Manage Staff / Add Staff", None))
         self.label_8.setText(QCoreApplication.translate("customer_main_window", u"Message", None))
     # retranslateUi

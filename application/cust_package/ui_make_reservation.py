@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'make_reservationujWbgj.ui'
+## Form generated from reading UI file 'make_reservationmmHzmT.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -363,7 +363,7 @@ class Ui_make_reservation_form(object):
     # setupUi
 
     def retranslateUi(self, make_reservation_form):
-        make_reservation_form.setWindowTitle(QCoreApplication.translate("make_reservation_form", u"MainWindow", None))
+        make_reservation_form.setWindowTitle(QCoreApplication.translate("make_reservation_form", u"Make Reservation", None))
         self.label_3.setText(QCoreApplication.translate("make_reservation_form", u"Make Reservation", None))
         self.label_12.setText(QCoreApplication.translate("make_reservation_form", u"Customer_id", None))
         self.txt_cust_id.setPlaceholderText(QCoreApplication.translate("make_reservation_form", u"C001", None))
