@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/application/login/forgot password.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/reset_password.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/login/ui_forgot password.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/login.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/login.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/signup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/signup.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/signup.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/ui_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/ui_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/ui_signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/ui_signup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/image_repo/GC_S0021.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/image_repo/PC_S0021.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0021.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/staff/image_repo/S0021.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
