@@ -67,19 +67,7 @@
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>0</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QLineEdit" name="txt_search">
             <property name="sizePolicy">
@@ -211,6 +199,45 @@ QPushButton:hover {
             </property>
            </spacer>
           </item>
+          <item>
+           <widget class="QPushButton" name="update_this_list">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #00aa7f;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #d0d0d0;
+	color: #ffffff;
+	font-weight: bold;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Update List</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -228,7 +255,7 @@ QPushButton:hover {
             <x>0</x>
             <y>0</y>
             <width>632</width>
-            <height>465</height>
+            <height>454</height>
            </rect>
           </property>
          </widget>

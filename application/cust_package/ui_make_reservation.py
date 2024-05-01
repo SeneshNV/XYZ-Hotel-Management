@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'make_reservationmmHzmT.ui'
+## Form generated from reading UI file 'make_reservationXbHuvn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -245,12 +245,12 @@ class Ui_make_reservation_form(object):
         self.frame_19.setObjectName(u"frame_19")
         self.frame_19.setFrameShape(QFrame.StyledPanel)
         self.frame_19.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_9 = QHBoxLayout(self.frame_19)
-        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
-        self.horizontalLayout_9.setContentsMargins(-1, -1, -1, 0)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame_19)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(-1, -1, -1, 0)
         self.horizontalSpacer_7 = QSpacerItem(23, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_9.addItem(self.horizontalSpacer_7)
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_7)
 
         self.btn_clear_2 = QPushButton(self.frame_19)
         self.btn_clear_2.setObjectName(u"btn_clear_2")
@@ -259,7 +259,9 @@ class Ui_make_reservation_form(object):
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.btn_clear_2.sizePolicy().hasHeightForWidth())
         self.btn_clear_2.setSizePolicy(sizePolicy1)
-        self.btn_clear_2.setMinimumSize(QSize(120, 0))
+        self.btn_clear_2.setMinimumSize(QSize(80, 0))
+        self.btn_clear_2.setMaximumSize(QSize(80, 16777215))
+        self.btn_clear_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_clear_2.setStyleSheet(u"/* Default button style */\n"
 "QPushButton {\n"
 "    background-color: #C79C99;\n"
@@ -289,20 +291,67 @@ class Ui_make_reservation_form(object):
 " 	color: #FFFFFF;\n"
 "}")
 
-        self.horizontalLayout_9.addWidget(self.btn_clear_2)
+        self.horizontalLayout_2.addWidget(self.btn_clear_2)
 
         self.horizontalSpacer_8 = QSpacerItem(2, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_9.addItem(self.horizontalSpacer_8)
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_8)
 
-        self.btn_save_reservation = QPushButton(self.frame_19)
-        self.btn_save_reservation.setObjectName(u"btn_save_reservation")
+        self.btn_update_reservation = QPushButton(self.frame_19)
+        self.btn_update_reservation.setObjectName(u"btn_update_reservation")
+        self.btn_update_reservation.setEnabled(True)
         sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.btn_update_reservation.sizePolicy().hasHeightForWidth())
+        self.btn_update_reservation.setSizePolicy(sizePolicy2)
+        self.btn_update_reservation.setMinimumSize(QSize(80, 0))
+        self.btn_update_reservation.setMaximumSize(QSize(80, 16777215))
+        self.btn_update_reservation.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_update_reservation.setStyleSheet(u"/* Default button style */\n"
+"QPushButton {\n"
+"    background-color: #00aa7f;\n"
+"	font: 10pt \"SF Pro Display\";\n"
+"    color: #ffffff;\n"
+"    border: none;\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 16px; \n"
+"text-align: center;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"/* Button style on hover */\n"
+"QPushButton:hover {\n"
+" background-color: #A2DCD7;\n"
+"	color: #ffffff;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+"/* Button style when pressed */\n"
+"QPushButton:pressed {\n"
+"    background-color: #17396D;\n"
+" 	color: #FFFFFF;\n"
+"}\n"
+"\n"
+"QPushButton:checked {\n"
+"	background-color: #17396D;\n"
+" 	color: #FFFFFF;\n"
+"}")
+
+        self.horizontalLayout_2.addWidget(self.btn_update_reservation)
+
+        self.horizontalSpacer_9 = QSpacerItem(3, 17, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_9)
+
+        self.btn_save_reservation = QPushButton(self.frame_19)
+        self.btn_save_reservation.setObjectName(u"btn_save_reservation")
         sizePolicy2.setHeightForWidth(self.btn_save_reservation.sizePolicy().hasHeightForWidth())
         self.btn_save_reservation.setSizePolicy(sizePolicy2)
-        self.btn_save_reservation.setMinimumSize(QSize(120, 0))
+        self.btn_save_reservation.setMinimumSize(QSize(80, 0))
+        self.btn_save_reservation.setMaximumSize(QSize(80, 16777215))
+        self.btn_save_reservation.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_save_reservation.setStyleSheet(u"/* Default button style */\n"
 "QPushButton {\n"
 "    background-color: #3474D4;\n"
@@ -334,11 +383,11 @@ class Ui_make_reservation_form(object):
 " 	color: #FFFFFF;\n"
 "}")
 
-        self.horizontalLayout_9.addWidget(self.btn_save_reservation)
+        self.horizontalLayout_2.addWidget(self.btn_save_reservation)
 
-        self.horizontalSpacer_9 = QSpacerItem(1, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer_13 = QSpacerItem(4, 17, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_9.addItem(self.horizontalSpacer_9)
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_13)
 
 
         self.verticalLayout_3.addWidget(self.frame_19)
@@ -379,6 +428,7 @@ class Ui_make_reservation_form(object):
         self.txt_cust_date.setPlaceholderText(QCoreApplication.translate("make_reservation_form", u"Select from Calandar", None))
         self.label.setText(QCoreApplication.translate("make_reservation_form", u"Reservation date", None))
         self.btn_clear_2.setText(QCoreApplication.translate("make_reservation_form", u"Clear", None))
+        self.btn_update_reservation.setText(QCoreApplication.translate("make_reservation_form", u"Update", None))
         self.btn_save_reservation.setText(QCoreApplication.translate("make_reservation_form", u"Save", None))
     # retranslateUi
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'view_reservationxlaIVq.ui'
+## Form generated from reading UI file 'view_reservationlrPZpH.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -44,9 +44,8 @@ class Ui_view_reservation_form(object):
         self.frame_4.setMinimumSize(QSize(100, 40))
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.frame_4)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame_4)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.txt_search = QLineEdit(self.frame_4)
         self.txt_search.setObjectName(u"txt_search")
         sizePolicy = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
@@ -66,7 +65,7 @@ class Ui_view_reservation_form(object):
 "}")
         self.txt_search.setReadOnly(False)
 
-        self.horizontalLayout_3.addWidget(self.txt_search)
+        self.horizontalLayout_2.addWidget(self.txt_search)
 
         self.btn_search = QPushButton(self.frame_4)
         self.btn_search.setObjectName(u"btn_search")
@@ -93,7 +92,7 @@ class Ui_view_reservation_form(object):
         icon.addFile(u":/newPrefix/icon/icons8-search.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.btn_search.setIcon(icon)
 
-        self.horizontalLayout_3.addWidget(self.btn_search)
+        self.horizontalLayout_2.addWidget(self.btn_search)
 
         self.pushButton_3 = QPushButton(self.frame_4)
         self.pushButton_3.setObjectName(u"pushButton_3")
@@ -121,11 +120,36 @@ class Ui_view_reservation_form(object):
         icon1.addFile(u":/newPrefix/icon/eraser-svgrepo-com.svg", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_3.setIcon(icon1)
 
-        self.horizontalLayout_3.addWidget(self.pushButton_3)
+        self.horizontalLayout_2.addWidget(self.pushButton_3)
 
         self.horizontalSpacer_3 = QSpacerItem(236, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_3.addItem(self.horizontalSpacer_3)
+        self.horizontalLayout_2.addItem(self.horizontalSpacer_3)
+
+        self.update_this_list = QPushButton(self.frame_4)
+        self.update_this_list.setObjectName(u"update_this_list")
+        self.update_this_list.setMinimumSize(QSize(100, 30))
+        self.update_this_list.setMaximumSize(QSize(120, 30))
+        self.update_this_list.setStyleSheet(u"/* Default button style */\n"
+"QPushButton {\n"
+"    background-color: #00aa7f;\n"
+"	font: 10pt \"SF Pro Display\";\n"
+"    color: #ffffff;\n"
+"    border: none;\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 16px; \n"
+"\n"
+"}\n"
+"\n"
+"/* Button style on hover */\n"
+"QPushButton:hover {\n"
+" background-color: #d0d0d0;\n"
+"	color: #ffffff;\n"
+"	font-weight: bold;\n"
+"}\n"
+"")
+
+        self.horizontalLayout_2.addWidget(self.update_this_list)
 
 
         self.verticalLayout.addWidget(self.frame_4)
@@ -136,7 +160,7 @@ class Ui_view_reservation_form(object):
         self.package_list.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 632, 465))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 632, 454))
         self.package_list.setWidget(self.scrollAreaWidgetContents)
 
         self.verticalLayout.addWidget(self.package_list)
@@ -157,5 +181,6 @@ class Ui_view_reservation_form(object):
         self.txt_search.setPlaceholderText(QCoreApplication.translate("view_reservation_form", u"Search Staff", None))
         self.btn_search.setText("")
         self.pushButton_3.setText("")
+        self.update_this_list.setText(QCoreApplication.translate("view_reservation_form", u"Update List", None))
     # retranslateUi
 

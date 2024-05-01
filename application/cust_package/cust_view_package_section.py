@@ -359,6 +359,7 @@ class ViewPackage(QWidget):
 
 
     def make_reservations(self, p_id):
+        id = 0
         from application.cust_package.make_reservation_section import MakeReservation
-        self.make_reser = MakeReservation(self.c_id, p_id)
+        self.make_reser = MakeReservation(self.c_id, id, p_id)
         self.make_reser.show()

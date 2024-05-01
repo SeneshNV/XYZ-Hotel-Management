@@ -406,7 +406,7 @@ border-radius: 10px;
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
               <property name="bottomMargin">
                <number>0</number>
               </property>
@@ -433,9 +433,18 @@ border-radius: 10px;
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>120</width>
+                  <width>80</width>
                   <height>0</height>
                  </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">/* Default button style */
@@ -486,6 +495,82 @@ QPushButton:checked {
                </spacer>
               </item>
               <item>
+               <widget class="QPushButton" name="btn_update_reservation">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>80</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/* Default button style */
+QPushButton {
+    background-color: #00aa7f;
+	font: 10pt &quot;SF Pro Display&quot;;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px; 
+text-align: center;
+
+
+}
+
+/* Button style on hover */
+QPushButton:hover {
+ background-color: #A2DCD7;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Button style when pressed */
+QPushButton:pressed {
+    background-color: #17396D;
+ 	color: #FFFFFF;
+}
+
+QPushButton:checked {
+	background-color: #17396D;
+ 	color: #FFFFFF;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Update</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>3</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
                <widget class="QPushButton" name="btn_save_reservation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -495,9 +580,18 @@ QPushButton:checked {
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>120</width>
+                  <width>80</width>
                   <height>0</height>
                  </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">/* Default button style */
@@ -537,14 +631,14 @@ QPushButton:checked {
                </widget>
               </item>
               <item>
-               <spacer name="horizontalSpacer_9">
+               <spacer name="horizontalSpacer_13">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
-                  <width>1</width>
-                  <height>20</height>
+                  <width>4</width>
+                  <height>17</height>
                  </size>
                 </property>
                </spacer>
