@@ -28,7 +28,7 @@ class AddPackage(QWidget):
 
         #button
         self.ui.btn_browser_img_2.clicked.connect(self.upload_package_image)
-        self.ui.btn_save_package_2.clicked.connect(self.insert_staff)
+        self.ui.btn_save_package_2.clicked.connect(self.insert_package)
 
         # Initialize image file names
         self.pkp_image_name = ""
@@ -112,7 +112,7 @@ class AddPackage(QWidget):
             # Set the QPixmap object as the pixmap for the label
             self.ui.lbl_display_img_2.setPixmap(pixmap)  # Display the uploaded image
 
-    def insert_staff(self):
+    def insert_package(self):
         try:
             cursor = self.connection.cursor()
 

@@ -53,4 +53,4 @@ class MainWindow(QWidget):
             # close splash screen
             self.close()
         # increase counter
-        COUNTER += 10
+        COUNTER += 2
