@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'cust_maingDoKkv.ui'
+## Form generated from reading UI file 'cust_mainAHcOOh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -17,7 +17,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QScrollArea, QSizePolicy,
-    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
+    QSpacerItem, QStackedWidget, QTextBrowser, QVBoxLayout,
+    QWidget)
 import icon_rc
 
 class Ui_customer_main_window(object):
@@ -64,14 +65,14 @@ class Ui_customer_main_window(object):
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 5, 0, 5)
-        self.label_3 = QLabel(self.frame_9)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setStyleSheet(u"\n"
+        self.user_name_txt = QLabel(self.frame_9)
+        self.user_name_txt.setObjectName(u"user_name_txt")
+        self.user_name_txt.setStyleSheet(u"\n"
 "color: rgb(255, 255, 255);\n"
 "font: 700 11pt \"SF Pro Display\";")
-        self.label_3.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.user_name_txt.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
-        self.verticalLayout_3.addWidget(self.label_3)
+        self.verticalLayout_3.addWidget(self.user_name_txt)
 
         self.label_2 = QLabel(self.frame_9)
         self.label_2.setObjectName(u"label_2")
@@ -229,34 +230,6 @@ class Ui_customer_main_window(object):
 
         self.verticalLayout_7.addWidget(self.line_2)
 
-        self.btn_settings = QPushButton(self.frame_12)
-        self.btn_settings.setObjectName(u"btn_settings")
-        icon3 = QIcon()
-        icon3.addFile(u":/newPrefix/icon/setting_dark.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon3.addFile(u":/newPrefix/icon/setting_light.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_settings.setIcon(icon3)
-        self.btn_settings.setIconSize(QSize(11, 11))
-        self.btn_settings.setCheckable(True)
-
-        self.verticalLayout_7.addWidget(self.btn_settings)
-
-        self.btn_about_us = QPushButton(self.frame_12)
-        self.btn_about_us.setObjectName(u"btn_about_us")
-        icon4 = QIcon()
-        icon4.addFile(u":/newPrefix/icon/Feedback.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon4.addFile(u":/newPrefix/icon/Feedback_W.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_about_us.setIcon(icon4)
-        self.btn_about_us.setCheckable(True)
-
-        self.verticalLayout_7.addWidget(self.btn_about_us)
-
-        self.line_3 = QFrame(self.frame_12)
-        self.line_3.setObjectName(u"line_3")
-        self.line_3.setFrameShape(QFrame.HLine)
-        self.line_3.setFrameShadow(QFrame.Sunken)
-
-        self.verticalLayout_7.addWidget(self.line_3)
-
         self.verticalSpacer = QSpacerItem(20, 80, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.verticalLayout_7.addItem(self.verticalSpacer)
@@ -327,6 +300,36 @@ class Ui_customer_main_window(object):
         self.cust_screens.setObjectName(u"cust_screens")
         self.dashboard = QWidget()
         self.dashboard.setObjectName(u"dashboard")
+        self.horizontalLayout_8 = QHBoxLayout(self.dashboard)
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.frame_20 = QFrame(self.dashboard)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_13 = QVBoxLayout(self.frame_20)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.label_12 = QLabel(self.frame_20)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setStyleSheet(u"font: 500 18pt \"ImPerfect23\";\n"
+"color: rgb(52, 116, 212);\n"
+"margin-left:5px;")
+
+        self.verticalLayout_13.addWidget(self.label_12)
+
+        self.verticalSpacer_3 = QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.verticalLayout_13.addItem(self.verticalSpacer_3)
+
+        self.textBrowser = QTextBrowser(self.frame_20)
+        self.textBrowser.setObjectName(u"textBrowser")
+        self.textBrowser.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
+"border:none;")
+
+        self.verticalLayout_13.addWidget(self.textBrowser)
+
+
+        self.horizontalLayout_8.addWidget(self.frame_20)
+
         self.cust_screens.addWidget(self.dashboard)
         self.mgt_package = QWidget()
         self.mgt_package.setObjectName(u"mgt_package")
@@ -634,18 +637,47 @@ class Ui_customer_main_window(object):
     def retranslateUi(self, customer_main_window):
         customer_main_window.setWindowTitle(QCoreApplication.translate("customer_main_window", u"XYZ - Customer Application", None))
         self.label_4.setText(QCoreApplication.translate("customer_main_window", u"Hotel XYZ", None))
-        self.label_3.setText(QCoreApplication.translate("customer_main_window", u"Senesh Nagoda Vithana", None))
+        self.user_name_txt.setText(QCoreApplication.translate("customer_main_window", u"Senesh Nagoda Vithana", None))
         self.label_2.setText(QCoreApplication.translate("customer_main_window", u"Customer", None))
         self.label.setText("")
         self.label_5.setText(QCoreApplication.translate("customer_main_window", u"Hotel Management System", None))
         self.btn_dashboard.setText(QCoreApplication.translate("customer_main_window", u"Dashboard", None))
         self.btn_package.setText(QCoreApplication.translate("customer_main_window", u"Packages", None))
         self.btn_view_reser.setText(QCoreApplication.translate("customer_main_window", u"View Reservation", None))
-        self.btn_settings.setText(QCoreApplication.translate("customer_main_window", u"Settings", None))
-        self.btn_about_us.setText(QCoreApplication.translate("customer_main_window", u"About us", None))
         self.btn_about_us_2.setText(QCoreApplication.translate("customer_main_window", u"Logout", None))
         self.label_6.setText(QCoreApplication.translate("customer_main_window", u"Developed by :", None))
         self.label_7.setText(QCoreApplication.translate("customer_main_window", u"Senesh Nagoda Vithana", None))
+        self.label_12.setText(QCoreApplication.translate("customer_main_window", u"Hotel XYZ", None))
+        self.textBrowser.setHtml(QCoreApplication.translate("customer_main_window", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'SF Pro Display'; font-size:9pt;\">Here's a concise summary:</span></p>\n"
+"<ol style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\">\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+                        " style=\" font-weight:700;\">Authentication and Authorization:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Users log in with username and password.</li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Customer accounts supported.</li></ul></li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Main Menu:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-family:'SF Pro Di"
+                        "splay'; font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Manage Reservations.</li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">View Packages.</li></ul></li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Manage Reservations:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Enter reservation details.</li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\""
+                        " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Calculate total cost based on pax.</li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Buttons: Create, Edit, Cancel.</li></ul></li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">View Packages:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Search packages by name.</li>\n"
+"<li style=\" font-family:'SF Pro Display'; font-size:9pt;\" style=\" margin-to"
+                        "p:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Display package details.</li></ul></li></ol></body></html>", None))
         self.btn_view_package.setText(QCoreApplication.translate("customer_main_window", u"View Packages", None))
         self.label_9.setText(QCoreApplication.translate("customer_main_window", u"Package / View Packages", None))
         self.label_11.setText(QCoreApplication.translate("customer_main_window", u"Package / Manage Reservations", None))

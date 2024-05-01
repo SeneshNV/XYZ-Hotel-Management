@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'admin_mainyuFDJZ.ui'
+## Form generated from reading UI file 'admin_mainZsAOas.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -17,7 +17,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QScrollArea, QSizePolicy,
-    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
+    QSpacerItem, QStackedWidget, QTextBrowser, QVBoxLayout,
+    QWidget)
 import icon_rc
 
 class Ui_MainWindow(object):
@@ -195,15 +196,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_7.addWidget(self.btn_dashboard)
 
-        self.btn_mgt_customer = QPushButton(self.frame_12)
-        self.btn_mgt_customer.setObjectName(u"btn_mgt_customer")
-        icon1 = QIcon()
-        icon1.addFile(u":/newPrefix/icon/Report.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_mgt_customer.setIcon(icon1)
-        self.btn_mgt_customer.setCheckable(True)
-
-        self.verticalLayout_7.addWidget(self.btn_mgt_customer)
-
         self.line = QFrame(self.frame_12)
         self.line.setObjectName(u"line")
         self.line.setFrameShape(QFrame.HLine)
@@ -213,20 +205,20 @@ class Ui_MainWindow(object):
 
         self.btn_mgt_staff = QPushButton(self.frame_12)
         self.btn_mgt_staff.setObjectName(u"btn_mgt_staff")
-        icon2 = QIcon()
-        icon2.addFile(u":/newPrefix/icon/Assistant.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon2.addFile(u":/newPrefix/icon/Assistant_W.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_mgt_staff.setIcon(icon2)
+        icon1 = QIcon()
+        icon1.addFile(u":/newPrefix/icon/Assistant.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/newPrefix/icon/Assistant_W.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.btn_mgt_staff.setIcon(icon1)
         self.btn_mgt_staff.setCheckable(True)
 
         self.verticalLayout_7.addWidget(self.btn_mgt_staff)
 
         self.btn_mgt_package = QPushButton(self.frame_12)
         self.btn_mgt_package.setObjectName(u"btn_mgt_package")
-        icon3 = QIcon()
-        icon3.addFile(u":/newPrefix/icon/View boards.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon3.addFile(u":/newPrefix/icon/View boards-1.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_mgt_package.setIcon(icon3)
+        icon2 = QIcon()
+        icon2.addFile(u":/newPrefix/icon/View boards.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/newPrefix/icon/View boards-1.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.btn_mgt_package.setIcon(icon2)
         self.btn_mgt_package.setCheckable(True)
 
         self.verticalLayout_7.addWidget(self.btn_mgt_package)
@@ -240,24 +232,14 @@ class Ui_MainWindow(object):
 
         self.btn_settings = QPushButton(self.frame_12)
         self.btn_settings.setObjectName(u"btn_settings")
-        icon4 = QIcon()
-        icon4.addFile(u":/newPrefix/icon/setting_dark.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon4.addFile(u":/newPrefix/icon/setting_light.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_settings.setIcon(icon4)
+        icon3 = QIcon()
+        icon3.addFile(u":/newPrefix/icon/setting_dark.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/newPrefix/icon/setting_light.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.btn_settings.setIcon(icon3)
         self.btn_settings.setIconSize(QSize(11, 11))
         self.btn_settings.setCheckable(True)
 
         self.verticalLayout_7.addWidget(self.btn_settings)
-
-        self.btn_about_us = QPushButton(self.frame_12)
-        self.btn_about_us.setObjectName(u"btn_about_us")
-        icon5 = QIcon()
-        icon5.addFile(u":/newPrefix/icon/Feedback.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon5.addFile(u":/newPrefix/icon/Feedback_W.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_about_us.setIcon(icon5)
-        self.btn_about_us.setCheckable(True)
-
-        self.verticalLayout_7.addWidget(self.btn_about_us)
 
         self.line_3 = QFrame(self.frame_12)
         self.line_3.setObjectName(u"line_3")
@@ -272,10 +254,10 @@ class Ui_MainWindow(object):
 
         self.btn_about_us_2 = QPushButton(self.frame_12)
         self.btn_about_us_2.setObjectName(u"btn_about_us_2")
-        icon6 = QIcon()
-        icon6.addFile(u":/newPrefix/icon/logout-svgrepo-com.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon6.addFile(u":/newPrefix/icon/logout-svgrepo-com(1).svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_about_us_2.setIcon(icon6)
+        icon4 = QIcon()
+        icon4.addFile(u":/newPrefix/icon/logout-svgrepo-com.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/newPrefix/icon/logout-svgrepo-com(1).svg", QSize(), QIcon.Normal, QIcon.On)
+        self.btn_about_us_2.setIcon(icon4)
         self.btn_about_us_2.setCheckable(True)
 
         self.verticalLayout_7.addWidget(self.btn_about_us_2)
@@ -339,6 +321,36 @@ class Ui_MainWindow(object):
         self.admin_screens.setObjectName(u"admin_screens")
         self.dashboard = QWidget()
         self.dashboard.setObjectName(u"dashboard")
+        self.horizontalLayout_8 = QHBoxLayout(self.dashboard)
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.frame_20 = QFrame(self.dashboard)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_13 = QVBoxLayout(self.frame_20)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.label_12 = QLabel(self.frame_20)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setStyleSheet(u"font: 500 18pt \"ImPerfect23\";\n"
+"color: rgb(174, 84, 79);\n"
+"margin-left:5px;")
+
+        self.verticalLayout_13.addWidget(self.label_12)
+
+        self.verticalSpacer_3 = QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.verticalLayout_13.addItem(self.verticalSpacer_3)
+
+        self.textBrowser = QTextBrowser(self.frame_20)
+        self.textBrowser.setObjectName(u"textBrowser")
+        self.textBrowser.setStyleSheet(u"font: 12pt \"Segoe UI\";\n"
+"border:none;")
+
+        self.verticalLayout_13.addWidget(self.textBrowser)
+
+
+        self.horizontalLayout_8.addWidget(self.frame_20)
+
         self.admin_screens.addWidget(self.dashboard)
         self.mgt_package = QWidget()
         self.mgt_package.setObjectName(u"mgt_package")
@@ -391,7 +403,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.btn_view_package = QPushButton(self.frame_5)
         self.btn_view_package.setObjectName(u"btn_view_package")
-        self.btn_view_package.setIcon(icon3)
+        self.btn_view_package.setIcon(icon2)
         self.btn_view_package.setCheckable(True)
         self.btn_view_package.setChecked(True)
 
@@ -399,10 +411,10 @@ class Ui_MainWindow(object):
 
         self.btn_add_package = QPushButton(self.frame_5)
         self.btn_add_package.setObjectName(u"btn_add_package")
-        icon7 = QIcon()
-        icon7.addFile(u":/newPrefix/icon/Add.svg", QSize(), QIcon.Normal, QIcon.Off)
-        icon7.addFile(u":/newPrefix/icon/Add_W.svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_add_package.setIcon(icon7)
+        icon5 = QIcon()
+        icon5.addFile(u":/newPrefix/icon/Add.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/newPrefix/icon/Add_W.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.btn_add_package.setIcon(icon5)
         self.btn_add_package.setCheckable(True)
 
         self.horizontalLayout_6.addWidget(self.btn_add_package)
@@ -516,7 +528,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.btn_view_staff = QPushButton(self.frame_15)
         self.btn_view_staff.setObjectName(u"btn_view_staff")
-        self.btn_view_staff.setIcon(icon3)
+        self.btn_view_staff.setIcon(icon2)
         self.btn_view_staff.setCheckable(True)
         self.btn_view_staff.setChecked(True)
 
@@ -524,7 +536,7 @@ class Ui_MainWindow(object):
 
         self.btn_add_staff = QPushButton(self.frame_15)
         self.btn_add_staff.setObjectName(u"btn_add_staff")
-        self.btn_add_staff.setIcon(icon7)
+        self.btn_add_staff.setIcon(icon5)
         self.btn_add_staff.setCheckable(True)
 
         self.horizontalLayout_7.addWidget(self.btn_add_staff)
@@ -660,21 +672,56 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"XYZ", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"XYZ - Admin Application", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Hotel XYZ", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Senesh Nagoda Vithana", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Admin", None))
         self.label.setText("")
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Hotel Management System", None))
         self.btn_dashboard.setText(QCoreApplication.translate("MainWindow", u"Dashboard", None))
-        self.btn_mgt_customer.setText(QCoreApplication.translate("MainWindow", u"Manage Customers", None))
         self.btn_mgt_staff.setText(QCoreApplication.translate("MainWindow", u"Manage Staff", None))
         self.btn_mgt_package.setText(QCoreApplication.translate("MainWindow", u"Manage Packages", None))
         self.btn_settings.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
-        self.btn_about_us.setText(QCoreApplication.translate("MainWindow", u"About us", None))
         self.btn_about_us_2.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Developed by :", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Senesh Nagoda Vithana", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Hotel XYZ", None))
+        self.textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">Here's a concise summary:</span></p>\n"
+"<ol style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;\">\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Authentication and Authorizatio"
+                        "n:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Users log in with username and password.</li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Admin and customer accounts supported.</li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Admin: <span style=\" font-family:'Courier New';\">admin</span> / <span style=\" font-family:'Courier New';\">admin123</span>.</li></ul></li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Main Menu:</span>\n"
+"<ul "
+                        "style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Admin: Manage Staff, Manage Packages.</li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Customer: Manage Reservations, View Packages.</li></ul></li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Manage Reservations:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Enter reservation details.</li>"
+                        "\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Calculate total cost based on pax.</li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Buttons: Create, Edit, Cancel, Reset.</li></ul></li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">View Packages:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Search packages by name.</li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block"
+                        "-indent:0; text-indent:0px;\">Display package details.</li></ul></li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Manage Packages:</span>\n"
+"<ul style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 2;\">\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Admin: Add, Edit, Delete packages.</li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Data entry for package details.</li>\n"
+"<li style=\" font-size:9pt;\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Clear all data option.</li></ul></li></ol></body></html>", None))
         self.btn_view_package.setText(QCoreApplication.translate("MainWindow", u"View Packages", None))
         self.btn_add_package.setText(QCoreApplication.translate("MainWindow", u"Add Packages", None))
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"Manage Package / View Packages", None))

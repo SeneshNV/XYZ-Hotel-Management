@@ -1,5 +1,6 @@
+import mysql
 from PySide6 import QtWidgets
-from PySide6.QtWidgets import QApplication, QMainWindow, QWidget
+from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QMessageBox
 from application.customer_main.ui_cust_main import Ui_customer_main_window
 
 
@@ -16,11 +17,46 @@ class CustomerMainScreen(QMainWindow):
         #button
         self.ui.btn_package.clicked.connect(self.show_packages)
         self.ui.btn_view_reser.clicked.connect(self.show_reservation)
+        self.ui.btn_dashboard.clicked.connect(self.dashboard)
+
 
         #loading
         self.show_view_packages()
         self.show_view_reservation()
+        self.display_name()
 
+
+    def show_message(self, title, message):
+        QMessageBox.warning(self, title, message)
+
+    def connect_to_mysql(self):
+        try:
+            # Replace these values with your actual MySQL connection details
+            self.connection = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="hoteldb"
+            )
+            if self.connection.is_connected():
+                print("Connected to MySQL database")
+                return self.connection
+
+        except mysql.connector.Error as e:
+            print("Error connecting to MySQL database:", e)
+            self.show_message("Warning", "Error connecting to Database.")
+            return None
+
+    def display_name(self):
+        cursor = self.connect_to_mysql().cursor()
+        cursor.execute("SELECT username FROM login WHERE customer_id = %s", (self.c_id,))
+        result = cursor.fetchone()
+        print("Result:", result)  # Add this line to see the result
+        if result:
+            username = result[0]
+            self.ui.user_name_txt.setText(username)
+        else:
+            self.show_message("Error", "Username not found.")
 
     def update_navigation_styles(self, selected_button):
         # Reset styles for all buttons
@@ -57,6 +93,26 @@ class CustomerMainScreen(QMainWindow):
         self.ui.cust_screens.setCurrentWidget(self.ui.mgt_package)
         self.update_navigation_styles(self.ui.btn_package)
         self.ui.btn_view_package.clicked.connect(self.show_view_packages)
+
+
+    def dashboard(self):
+        self.ui.cust_screens.setCurrentWidget(self.ui.dashboard)
+        self.update_navigation_styles(self.ui.btn_dashboard)
+
+
+        # # Clear the current contents of the frame
+        # frame_layout = self.ui.frame_20.layout()
+        # if frame_layout:
+        #     while frame_layout.count() > 0:
+        #         widget = frame_layout.takeAt(0).widget()
+        #         if widget:
+        #             widget.deleteLater()
+        #
+        # # Create layout for frame_19 if it doesn't exist
+        # frame_layout = self.ui.frame_20.layout()
+        # if frame_layout is None:
+        #     frame_layout = QtWidgets.QVBoxLayout()
+        #     self.ui.frame_20.setLayout(frame_layout)
 
 
     def show_view_packages(self):
