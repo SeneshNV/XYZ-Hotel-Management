@@ -22,8 +22,10 @@ class CustomerMainScreen(QMainWindow):
 
         #loading
         self.show_view_packages()
-        self.show_view_reservation()
         self.display_name()
+        self.show_view_packages()
+        self.ui.btn_view_reser.clicked.connect(self.show_view_reservation)
+        self.ui.btn_logout.clicked.connect(self.show_logout)
 
 
     def show_message(self, title, message):
@@ -57,6 +59,8 @@ class CustomerMainScreen(QMainWindow):
             self.ui.user_name_txt.setText(username)
         else:
             self.show_message("Error", "Username not found.")
+
+        self.__del__()
 
     def update_navigation_styles(self, selected_button):
         # Reset styles for all buttons
@@ -144,7 +148,9 @@ class CustomerMainScreen(QMainWindow):
     def show_reservation(self):
         self.ui.cust_screens.setCurrentWidget(self.ui.mgt_reservation_2)
         self.update_navigation_styles(self.ui.btn_view_reser)
-        self.ui.btn_view_package.clicked.connect(self.show_view_reservation)
+
+        # self.ui.btn_view_package.clicked.connect(self.show_view_reservation)
+        self.ui.btn_view_reser.clicked.connect(self.show_view_reservation)
 
 
     def show_view_reservation(self):
@@ -164,9 +170,22 @@ class CustomerMainScreen(QMainWindow):
         if frame_layout is None:
             frame_layout = QtWidgets.QVBoxLayout()
             self.ui.frame_18.setLayout(frame_layout)
-
+        print("customer main to view reseravtion")
         # Instantiate and add the AddStaff widget to the frame
         from application.cust_package.view_reservation_section import ViewReservation
         self.view_res = ViewReservation(self.c_id)
         frame_layout.addWidget(self.view_res)
-        # self.add_staff.setVisible(True)
+
+    def __del__(self):
+        # Destructor to close the database connection when the object is destroyed
+        if self.connection and self.connection.is_connected():
+            self.connection.close()
+            print("MySQL connection closed")
+
+    def show_logout(self):
+        # Close the current window
+        self.close()
+
+        from application.login.login import Login_Screen
+        self.login_window = Login_Screen()
+        self.login_window.show()

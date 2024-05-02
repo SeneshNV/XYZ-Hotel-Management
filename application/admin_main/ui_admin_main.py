@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'admin_mainZsAOas.ui'
+## Form generated from reading UI file 'admin_mainNaPSNW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -252,15 +252,15 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_7.addItem(self.verticalSpacer)
 
-        self.btn_about_us_2 = QPushButton(self.frame_12)
-        self.btn_about_us_2.setObjectName(u"btn_about_us_2")
+        self.btn_logout = QPushButton(self.frame_12)
+        self.btn_logout.setObjectName(u"btn_logout")
         icon4 = QIcon()
         icon4.addFile(u":/newPrefix/icon/logout-svgrepo-com.svg", QSize(), QIcon.Normal, QIcon.Off)
         icon4.addFile(u":/newPrefix/icon/logout-svgrepo-com(1).svg", QSize(), QIcon.Normal, QIcon.On)
-        self.btn_about_us_2.setIcon(icon4)
-        self.btn_about_us_2.setCheckable(True)
+        self.btn_logout.setIcon(icon4)
+        self.btn_logout.setCheckable(False)
 
-        self.verticalLayout_7.addWidget(self.btn_about_us_2)
+        self.verticalLayout_7.addWidget(self.btn_logout)
 
 
         self.verticalLayout_4.addWidget(self.frame_12)
@@ -682,7 +682,7 @@ class Ui_MainWindow(object):
         self.btn_mgt_staff.setText(QCoreApplication.translate("MainWindow", u"Manage Staff", None))
         self.btn_mgt_package.setText(QCoreApplication.translate("MainWindow", u"Manage Packages", None))
         self.btn_settings.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
-        self.btn_about_us_2.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
+        self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Developed by :", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Senesh Nagoda Vithana", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"Hotel XYZ", None))

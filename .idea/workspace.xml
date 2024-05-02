@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/staff/image_repo/S0035.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/package/add_package_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/add_package_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P0014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/image_repo/P0014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P007.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/application/package/image_repo/P007.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin_main/admin_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/admin_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin_main/admin_main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/admin_main.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin_main/ui_admin_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/ui_admin_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cust_package/make_reservation_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/cust_package/make_reservation_section.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cust_package/view_reservation_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/cust_package/view_reservation_section.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/customer_main/cust_main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/customer_main/cust_main.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/customer_main/customer_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/customer_main/customer_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/customer_main/ui_cust_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/customer_main/ui_cust_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/login/reset_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/reset_password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/login/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/signup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/splash/splash.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/splash/splash.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +53,7 @@
     "Python.main.executor": "Run",
     "Python.splash.executor": "Run",
     "Python.view_packages_section.executor": "Run",
+    "Python.view_reservation_section.executor": "Run",
     "Python.view_staff_section.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",

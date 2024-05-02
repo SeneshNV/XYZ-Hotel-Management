@@ -18,7 +18,7 @@ class Reset_Screen(QWidget):
         self.setAttribute(Qt.WA_TranslucentBackground)
 
         # set app logo
-        login_img = QtGui.QPixmap("images/login_img.jpg")
+        login_img = QtGui.QPixmap("images/36676.jpg")
         self.ui.label_5.setPixmap(login_img)
         self.ui.label_5.setScaledContents(True)
         self.ui.label_5.setSizePolicy(QtWidgets.QSizePolicy.Ignored, QtWidgets.QSizePolicy.Ignored)

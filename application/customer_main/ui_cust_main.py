@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'cust_mainAHcOOh.ui'
+## Form generated from reading UI file 'cust_mainOKWPPF.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -234,12 +234,12 @@ class Ui_customer_main_window(object):
 
         self.verticalLayout_7.addItem(self.verticalSpacer)
 
-        self.btn_about_us_2 = QPushButton(self.frame_12)
-        self.btn_about_us_2.setObjectName(u"btn_about_us_2")
-        self.btn_about_us_2.setIcon(icon1)
-        self.btn_about_us_2.setCheckable(True)
+        self.btn_logout = QPushButton(self.frame_12)
+        self.btn_logout.setObjectName(u"btn_logout")
+        self.btn_logout.setIcon(icon1)
+        self.btn_logout.setCheckable(False)
 
-        self.verticalLayout_7.addWidget(self.btn_about_us_2)
+        self.verticalLayout_7.addWidget(self.btn_logout)
 
 
         self.verticalLayout_4.addWidget(self.frame_12)
@@ -644,7 +644,7 @@ class Ui_customer_main_window(object):
         self.btn_dashboard.setText(QCoreApplication.translate("customer_main_window", u"Dashboard", None))
         self.btn_package.setText(QCoreApplication.translate("customer_main_window", u"Packages", None))
         self.btn_view_reser.setText(QCoreApplication.translate("customer_main_window", u"View Reservation", None))
-        self.btn_about_us_2.setText(QCoreApplication.translate("customer_main_window", u"Logout", None))
+        self.btn_logout.setText(QCoreApplication.translate("customer_main_window", u"Logout", None))
         self.label_6.setText(QCoreApplication.translate("customer_main_window", u"Developed by :", None))
         self.label_7.setText(QCoreApplication.translate("customer_main_window", u"Senesh Nagoda Vithana", None))
         self.label_12.setText(QCoreApplication.translate("customer_main_window", u"Hotel XYZ", None))

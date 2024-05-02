@@ -19,7 +19,7 @@ class Signup_Screen(QWidget):
         self.setAttribute(Qt.WA_TranslucentBackground)
 
         # set app logo
-        login_img = QtGui.QPixmap("images/login_img.jpg")
+        login_img = QtGui.QPixmap("images/2151038924.jpg")
         self.ui.label_5.setPixmap(login_img)
         self.ui.label_5.setScaledContents(True)
         self.ui.label_5.setSizePolicy(QtWidgets.QSizePolicy.Ignored, QtWidgets.QSizePolicy.Ignored)
@@ -123,6 +123,14 @@ class Signup_Screen(QWidget):
             # Create a cursor object
             cursor = self.connection.cursor()
 
+            # Check if the username already exists
+            cursor.execute("SELECT username FROM login WHERE username = %s", (u_name,))
+            existing_username = cursor.fetchone()
+            if existing_username:
+                # Display error message if the username already exists
+                self.show_message("Error", "Username already exists. Please choose a different username.")
+                return
+
             # Define the SQL query to insert data into the login table
             query = "INSERT INTO login (customer_id, username, password, email) VALUES (%s, %s, %s, %s)"
 
@@ -147,7 +155,6 @@ class Signup_Screen(QWidget):
         finally:
             # Close the cursor
             cursor.close()
-
 
     def have_acc(self):
         from application.login.login import Login_Screen

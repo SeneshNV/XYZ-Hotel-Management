@@ -27,6 +27,7 @@ class ViewReservation(QWidget):
         self.view_my_reservation()
 
         self.ui.update_this_list.clicked.connect(self.view_my_reservation)
+        self.ui.btn_search.clicked.connect(self.view_my_reservation)
 
     def show_message(self, title, message):
         QMessageBox.warning(self, title, message)
@@ -54,8 +55,23 @@ class ViewReservation(QWidget):
         try:
             cursor = self.connect_to_mysql().cursor()
 
-            cursor.execute("SELECT id, c_id, p_id, no_of_pax, reservation_date FROM cust_reservation where c_id = %s",
-                           (self.c_id,))
+            search_text = self.ui.txt_search.text().strip()
+
+            if not search_text:
+                cursor.execute("""
+                    SELECT cr.id, cr.c_id, cr.p_id, cr.no_of_pax, cr.reservation_date, p.p_name, p.cost_per_person
+                    FROM cust_reservation cr
+                    JOIN packages p ON cr.p_id = p.p_id
+                    WHERE cr.c_id = %s
+                """, (self.c_id,))
+            else:
+                cursor.execute("""
+                    SELECT cr.id, cr.c_id, cr.p_id, cr.no_of_pax, cr.reservation_date, p.p_name, p.cost_per_person
+                    FROM cust_reservation cr
+                    JOIN packages p ON cr.p_id = p.p_id
+                    WHERE cr.c_id = %s AND (p.p_id = %s OR p.p_name LIKE %s)
+                """, (self.c_id, search_text, '%' + search_text + '%'))
+
             reservation_records = cursor.fetchall()
 
             # Clear any existing items in the list widget
@@ -66,16 +82,7 @@ class ViewReservation(QWidget):
                 reservation_layout_final = QVBoxLayout()
 
             for reservation in reservation_records:
-                id,c_id, p_id, no_of_pax, reservation_date = reservation
-
-                cursor.execute("SELECT p_name, cost_per_person FROM packages where p_id = %s", (p_id,))
-                package_record = cursor.fetchone()
-
-                if package_record:
-                    p_name, cost_per_person = package_record
-                else:
-                    p_name = "Unknown"
-                    cost_per_person = "Unknown"
+                id, c_id, p_id, no_of_pax, reservation_date, p_name, cost_per_person = reservation
 
                 # Calculate total price
                 tot_cost = self.calculate_total_cost(cursor, no_of_pax)
@@ -97,7 +104,6 @@ class ViewReservation(QWidget):
                 # First row: package information
                 package_info_widget = QWidget()
                 package_info_layout = QHBoxLayout()
-
 
                 # First column: package details
                 col1_widget = QWidget()
@@ -217,13 +223,10 @@ class ViewReservation(QWidget):
                 button_widget.setLayout(button_layout)
                 reservation_layout.addWidget(button_widget)
 
-                # Add vertical spacer after reservation layout
-                vertical_spacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-                reservation_layout.addItem(vertical_spacer)
-
+                # Add the custom widget to the internal layout
                 reservation_widget.setLayout(reservation_layout)
 
-                # Add the custom widget to the internal layout
+                # Add the reservation widget to the final layout
                 reservation_layout_final.addWidget(reservation_widget)
 
             # Add vertical spacer to layout
@@ -233,9 +236,9 @@ class ViewReservation(QWidget):
             # Set internal layout for package list
             self.ui.package_list.widget().setLayout(reservation_layout_final)
 
+            # Close cursor and connection
             cursor.close()
             self.connection.close()
-
 
         except mysql.connector.Error as e:
             print("Error accessing MySQL:", e)

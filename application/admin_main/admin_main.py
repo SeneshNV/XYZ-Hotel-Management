@@ -14,8 +14,10 @@ class AdminMainScreen(QMainWindow):
         self.ui.setupUi(self)  # Set up the UI components
 
         #button
+        self.ui.btn_dashboard.clicked.connect(self.dashboard)
         self.ui.btn_mgt_package.clicked.connect(self.show_mgt_package)
         self.ui.btn_mgt_staff.clicked.connect(self.show_mgt_staff)
+        self.ui.btn_logout.clicked.connect(self.show_logout)
 
         #loading
         self.show_view_staff()
@@ -159,3 +161,17 @@ class AdminMainScreen(QMainWindow):
         self.view_staff = ViewStaff()
         frame_layout.addWidget(self.view_staff)
         # self.view_staff.setVisible(True)
+
+
+    def dashboard(self):
+        self.ui.admin_screens.setCurrentWidget(self.ui.dashboard)
+        self.update_navigation_styles(self.ui.btn_dashboard)
+
+
+    def show_logout(self):
+        # Close the current window
+        self.close()
+
+        from application.login.login import Login_Screen
+        self.login_window = Login_Screen()
+        self.login_window.show()

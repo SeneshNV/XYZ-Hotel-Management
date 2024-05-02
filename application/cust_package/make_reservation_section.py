@@ -38,11 +38,13 @@ class MakeReservation(QMainWindow):
 
         self.display_packages()
         self.ui.calendarWidget.selectionChanged.connect(self.update_date_lineedit)
+        self.ui.cust_no_of_pax.valueChanged.connect(self.update_price_label)
 
         self.ui.btn_save_reservation.clicked.connect(self.make_reservations)
 
         self.ui.cust_no_of_pax.setRange(0, 1000)
-        self.ui.cust_no_of_pax.valueChanged.connect(self.update_price_label)
+
+        self.ui.calendarWidget.setMinimumDate(QDate.currentDate())
 
     def show_message(self, title, message):
         QMessageBox.warning(self, title, message)
