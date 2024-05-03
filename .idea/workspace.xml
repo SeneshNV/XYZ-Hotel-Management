@@ -6,17 +6,107 @@
   <component name="ChangeListManager">
     <list default="true" id="5707bd61-2b3d-418f-9aae-fff427580b75" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin_main/admin_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/admin_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin_main/admin_main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/admin_main.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin_main/ui_admin_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin_main/ui_admin_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/cust_package/make_reservation_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/cust_package/make_reservation_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/cust_package/view_reservation_section.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/cust_package/view_reservation_section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/customer_main/cust_main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/application/customer_main/cust_main.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/customer_main/customer_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/customer_main/customer_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/customer_main/ui_cust_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/customer_main/ui_cust_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/reset_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/reset_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/login/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/login/signup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/splash/splash.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/splash/splash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P0010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P0012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/package/image_repo/P009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S0038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/GC_S009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S0038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/PC_S009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S0038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/staff/image_repo/S009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/def.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sdf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sdfs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/we.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +137,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "Python.splash.executor": "Run",
-    "Python.view_packages_section.executor": "Run",
-    "Python.view_reservation_section.executor": "Run",
-    "Python.view_staff_section.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/XYZ Hotel Management",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.splash.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_packages_section.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_reservation_section.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_staff_section.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/XYZ Hotel Management System&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
